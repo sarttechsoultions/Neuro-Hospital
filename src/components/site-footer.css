@@ -1,0 +1,39 @@
+.homepage > .neuro-footer { background:#0a2540; color:#a9bdce; padding:48px 24px 24px; width:100%; order:6; margin-top:auto; }
+.neuro-footer > .neuro-footer-inner { max-width:1216px; margin:0 auto; width:100%; }
+.footer-intro { display:flex; align-items:center; justify-content:space-between; gap:28px; padding-bottom:32px; border-bottom:1px solid #ffffff16; }
+.footer-brand { display:flex; align-items:center; gap:12px; color:white; flex-shrink:0; }
+.footer-brand-icon { display:grid; place-items:center; width:44px; height:44px; border-radius:13px; background:linear-gradient(135deg,#0284c7,#06b6d4); }
+.footer-brand strong { display:block; font-size:20px; line-height:1.4; letter-spacing:-.4px; }
+.footer-brand small { display:block; font-size:12px; color:#40cde2; line-height:1.5; }
+.footer-intro p { font-size:13px; line-height:1.8; margin:0; }
+.footer-appointment { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:12px 18px; border:1px solid #ffffff30; color:white; border-radius:8px; font-size:13px; }
+.footer-appointment:hover { border-color:#fa4d2b; background:#ffffff08; }
+.footer-main { display:grid; grid-template-columns:.65fr 2fr 1fr; gap:48px; padding:36px 0; }
+.footer-main h2 { color:white; font-size:13px; font-weight:600; letter-spacing:.3px; margin:0 0 20px; }
+.footer-links nav { display:flex; flex-direction:column; gap:12px; }
+.footer-main a { font-size:13px; line-height:1.6; }
+.footer-main a:hover { color:white; }
+.footer-clinic-list { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.footer-clinic-list address { font-style:normal; min-width:0; }
+.footer-clinic-label { font-size:10px; letter-spacing:1.5px; color:#40cde2; font-weight:600; }
+.footer-clinic-list h3 { font-size:14px; font-weight:600; line-height:1.6; color:#edf4fa; margin:7px 0; }
+.footer-clinic-list p,.footer-contact p { font-size:12px; line-height:1.85; margin:0 0 12px; }
+.footer-clinic-list a { color:#40cde2; font-size:12px; }
+.footer-contact > a { display:block; overflow-wrap:anywhere; margin-bottom:10px; }
+.footer-contact > .footer-phone { font-size:17px; color:white; font-weight:600; }
+.footer-contact p { margin-top:18px; }
+.footer-bottom { border-top:1px solid #ffffff16; padding-top:22px; display:flex; justify-content:space-between; gap:12px; color:#819bb0; font-size:11px; line-height:1.8; }
+@media(max-width:900px) { .footer-intro { flex-wrap:wrap; }.footer-main { grid-template-columns:.65fr 1.35fr; gap:32px; }.footer-clinic-list { grid-template-columns:1fr; gap:22px; }.footer-contact { grid-column:1/-1; border-top:1px solid #ffffff16; padding-top:24px; } }
+@media(max-width:600px) {
+ .homepage > .neuro-footer { padding:32px 20px 22px; }
+ .footer-intro { display:grid; gap:18px; padding-bottom:28px; }
+ .footer-brand strong { font-size:19px; }
+ .footer-intro p { font-size:12px; }
+ .footer-appointment { width:100%; }
+ .footer-main { gap:28px 20px; padding:28px 0; grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr); }
+ .footer-main h2 { margin-bottom:16px; }
+ .footer-links nav { gap:14px; }
+ .footer-clinic-list h3 { font-size:13px; line-height:1.55; }
+ .footer-clinic-list p { font-size:11px; line-height:1.8; }
+ .footer-bottom { flex-direction:column; gap:4px; }
+}

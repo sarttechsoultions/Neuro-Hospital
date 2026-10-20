@@ -1,0 +1,14 @@
+/* Homepage section headings and horizontal mobile card rails. */
+.homepage :is([data-node-id="2042:2667"], [data-node-id="2042:2746"], [data-node-id="2046:2837"], [data-node-id="2046:2907"]) { width:100%; height:auto; text-align:center; }
+.homepage :is([data-node-id="2042:2667"], [data-node-id="2042:2746"], [data-node-id="2046:2837"], [data-node-id="2046:2907"]) p { text-align:center; }
+.homepage :is([data-node-id="2042:2667"], [data-node-id="2042:2746"], [data-node-id="2046:2837"], [data-node-id="2046:2907"]) div { align-items:center; max-width:100%; white-space:normal; }
+@media(max-width:767px) {
+ .homepage :is([data-node-id="2042:2668"], [data-node-id="2042:2747"], [data-node-id="2046:2838"], [data-node-id="2046:2908"]) { font-size:15px; letter-spacing:1px; }
+ .homepage :is([data-node-id="2042:2668"], [data-node-id="2042:2747"], [data-node-id="2046:2838"], [data-node-id="2046:2908"]) p { line-height:22px; }
+ .homepage :is([data-node-id="2042:2670"], [data-node-id="2042:2749"], [data-node-id="2046:2840"], [data-node-id="2046:2910"]) { font-size:28px; width:100%; }
+ .homepage :is([data-node-id="2042:2670"], [data-node-id="2042:2749"], [data-node-id="2046:2840"], [data-node-id="2046:2910"]) p { line-height:34px; }
+ .homepage :is([data-name="Location Cards Grid"], [data-name="Doctor Cards Grid"], [data-name="Services 8-Grid"], [data-name="Gallery Grid: 6 Items"]) { display:flex !important; flex-direction:row; flex-wrap:nowrap; align-items:stretch; justify-content:flex-start; overflow-x:auto; overflow-y:hidden; gap:16px; width:100%; min-width:0; padding:4px 0 16px; scroll-snap-type:x mandatory; scroll-padding-inline:0; overscroll-behavior-x:contain; scrollbar-width:thin; scrollbar-color:#fa4d2b #ffffff70; }
+ .homepage :is([data-name="Location Cards Grid"], [data-name="Doctor Cards Grid"], [data-name="Gallery Grid: 6 Items"]) > div { flex:0 0 100%; width:100%; min-width:0; scroll-snap-align:center; }
+ .homepage [data-name="Services 8-Grid"] > div { flex:0 0 calc((100% - 16px)/2); width:calc((100% - 16px)/2); scroll-snap-align:start; }
+ .homepage [data-name="Gallery Grid: 6 Items"] > div > div:first-child { height:220px; }
+}

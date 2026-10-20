@@ -1,0 +1,21 @@
+/* Centered testimonial heading and swipeable mobile cards. */
+[data-name="TestimonialsSection"] [data-node-id="2047:2958"] { width:100%; text-align:center; }
+[data-name="TestimonialsSection"] [data-node-id="2047:2960"] { align-items:center; }
+[data-name="TestimonialsSection"] [data-node-id="2047:2961"],
+[data-name="TestimonialsSection"] [data-node-id="2047:2963"],
+[data-name="TestimonialsSection"] [data-node-id="2047:2959"] { width:100%; text-align:center; white-space:normal; }
+@media(max-width:767px) {
+ [data-name="TestimonialsSection"] [data-node-id="2047:2959"] { font-size:15px; letter-spacing:1px; }
+ [data-name="TestimonialsSection"] [data-node-id="2047:2959"] p { line-height:22px; }
+ [data-name="TestimonialsSection"] [data-node-id="2047:2961"] { font-size:28px; }
+ [data-name="TestimonialsSection"] [data-node-id="2047:2961"] p { line-height:34px; }
+ [data-name="TestimonialsSection"] [data-name="Testimonials Grid"] { display:flex; flex-wrap:nowrap; justify-content:flex-start; align-items:stretch; gap:16px; overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory; scroll-padding-inline:0; padding:4px 0 16px; overscroll-behavior-x:contain; scrollbar-width:thin; scrollbar-color:#fa4d2b #e2e8f0; }
+ [data-name="TestimonialsSection"] [data-name="Testimonials Grid"] > div { flex:0 0 100%; width:100%; min-width:0; scroll-snap-align:center; padding:22px 18px; box-shadow:0 2px 5px #0a254008; }
+ [data-name="TestimonialsSection"] [data-name="Testimonials Grid"] > div > div:last-child { flex:1; min-width:0; }
+ [data-name="TestimonialsSection"] [data-name="Testimonials Grid"] > div > div:last-child > div:first-child { flex-wrap:wrap; gap:6px 12px; }
+}
+
+@media(max-width:767px) {
+ .homepage [data-name="TestimonialsSection"] .testimonials-track { display:flex !important; flex-direction:row !important; overflow-x:auto !important; }
+ .homepage [data-name="TestimonialsSection"] .testimonials-track > div { flex:0 0 100% !important; }
+}

@@ -1,26 +1,214 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 140px; }
+body { margin: 0; background: white; color: #0a2540; font-family: Arial, Helvetica, sans-serif; }
+a { text-decoration: none; }
+a:focus-visible { outline: 3px solid #0284c7; outline-offset: 5px; }
+.homepage { display: flex; flex-direction: column; min-height: 100vh; height: auto; }
+.homepage > div { position: relative; inset: auto; translate: none; transform: none; width: 100%; height: auto; flex-shrink: 0; }
+.homepage > div:not([data-name="MainHeader"]) { padding: 48px max(24px, calc((100% - 1280px) / 2)); }
+.homepage > div > div { max-width: 1280px; width: 100%; min-width: 0; }
+.homepage > [data-name="MainHeader"] { position: sticky; top: 0; order: -1; z-index: 50; height: auto; min-height: 80px; box-shadow: 0 2px 14px #0a254012; }
+[data-name="MainHeader"] > div { height: auto; min-height: 80px; }
+[data-name="MainHeader"] > div > div { padding: 16px 24px; gap: 24px; }
+[data-name="Desktop Navigation Links"] { gap: clamp(12px, 2vw, 32px); }
+[data-name="Desktop Navigation Links"] a:hover { color: #fa4d2b; }
+[data-name="HeroSection"] > div { grid-template-rows: auto; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: center; }
+[data-name="Left Hero Content"], [data-name="Right Hero Visual"] { grid-column: auto; grid-row: auto; min-width: 0; }
+[data-name="Left Hero Content"] > div { max-width: 100%; }
+[data-name="Left Hero Content"] p { white-space: normal; }
+[data-name="Left Hero Content"] [data-node-id="2042:2601"] { white-space: normal; width: 100%; }
+[data-name="Feature Icons Row"] { flex-wrap: wrap; justify-content: flex-start; }
+[data-name="Feature Icons Row"] > div { flex: 1 1 130px; }
+[data-name="Feature Icons Row"] > div > div > div:last-child { padding-right: 0; }
+[data-name="MainFooter"] { margin-top: auto; }
+[data-name="MainFooter"] [data-name="HorizontalBorder"] { display: grid; grid-template-columns: 1.1fr .7fr 1.3fr 1fr 1fr; gap: 32px; padding-bottom: 32px; }
+[data-name="HorizontalBorder"] > div { min-width: 0; }
+[data-name="HorizontalBorder"] > div > div { padding-bottom: 0; height: auto; }
+[data-node-id="2051:3064"] { height: auto; }
+[data-name="MainFooter"] p { white-space: normal; overflow-wrap: anywhere; }
+[data-name="Copyright Bar"] { border-top: 1px solid #ffffff18; gap: 16px; flex-wrap: wrap; }
+@media (max-width: 1100px) {
+ [data-name="MainHeader"] > div > div { flex-wrap: wrap; gap: 16px; }
+ [data-name="Desktop Navigation Links"] { order: 3; width: 100%; justify-content: center; }
+ [data-node-id="2042:2599"] { font-size: 42px; }
+ [data-node-id="2042:2599"] span { line-height: 1.15; }
+ [data-name="Services 8-Grid"] { grid-template-columns: repeat(4,minmax(0,1fr)); }
+ [data-name="Gallery Grid: 6 Items"] { grid-template-columns: repeat(3,minmax(0,1fr)); }
+ [data-name="MainFooter"] [data-name="HorizontalBorder"] { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 767px) {
+ .homepage > div:not([data-name="MainHeader"]) { padding: 36px 20px; }
+ .homepage p { white-space: normal; }
+ [data-name="MainHeader"] > div > div { padding: 12px 16px; gap: 12px; }
+ [data-name="Desktop Navigation Links"] { justify-content: flex-start; overflow-x: auto; gap: 22px; padding: 6px 0; }
+ [data-name="Desktop Navigation Links"] a { flex-shrink: 0; }
+ [data-name="Right Action Button → Link"] { padding: 10px 12px; gap: 6px; }
+ [data-node-id="2042:2567"] { font-size: 17px; }
+ [data-name="HeroSection"] > div { display: flex; flex-direction: column; gap: 32px; }
+ [data-name="Left Hero Content"], [data-name="Right Hero Visual"] { width: 100%; height: auto; }
+ [data-node-id="2042:2599"] { font-size: 36px; letter-spacing: -1px; }
+ [data-node-id="2042:2601"] { font-size: 16px; }
+ [data-name="Doctor examining brain scan"] { height: 320px; }
+ [data-name="Floating Trust Badge"] { left: 12px; bottom: 12px; }
+ [data-name="Location Cards Grid"], [data-name="Testimonials Grid"] { display: grid; grid-template-columns: 1fr; gap: 20px; }
+ [data-name="Doctor Cards Grid"] { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+ [data-name="Doctor Cards Grid"] > div { width: 100%; padding: 20px 12px; }
+ [data-name="Services 8-Grid"], [data-name="Gallery Grid: 6 Items"] { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+ [data-name="MainFooter"] [data-name="HorizontalBorder"] { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px 24px; }
+ [data-name="Brand Info"] { grid-column: 1 / -1; }
+ [data-name="Copyright Bar"] { align-items: flex-start; flex-direction: column; }
+ [data-name="Section Header"], [data-node-id="2042:2746"] { height: auto; }
+}
+@media (max-width: 420px) {
+ [data-name="Right Action Button → Link"] { font-size: 12px; padding: 10px; }
+ [data-name="Right Action Button → Link"] p { font-size: 11px; }
+ [data-name="MainFooter"] [data-name="HorizontalBorder"] { grid-template-columns: 1fr; }
+ [data-name="Location Cards Grid"] > div { flex-direction: column; height: auto; }
+ [data-name="Location Cards Grid"] > div > div { width: 100%; flex: auto; }
+ [data-name="Location Cards Grid"] > div > div:first-child { height: 220px; }
+}
+.homepage [class*="w-[1280px]"], .homepage [class*="w-[1274px]"] { width: 100%; max-width: 1280px; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.homepage > div { --tw-translate-x: 0; --tw-translate-y: 0; margin-inline: auto; max-width: none; }
+.homepage > div > div { margin-inline: auto; }
+@theme inline { --font-sans: Arial, Helvetica, sans-serif; --font-mono: monospace; }
+.homepage [data-name='HorizontalBorder'] > div > div { min-width: 0; }
+.homepage [data-name='HorizontalBorder'] p { max-width: 100%; }
+@media (max-width: 767px) {
+ [data-name="Feature Icons Row"] { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px 12px; }
+ [data-name="Feature Icons Row"] > div { min-width: 0; }
+ [data-name="Feature Icons Row"] [class*="whitespace-nowrap"] { white-space: normal; min-width: 0; }
+ [data-name="Feature Icons Row"] > div > div > div:last-child { flex: 1; min-width: 0; }
+ [data-name="Feature Icons Row"] > div > div > div:last-child > div { white-space: normal; }
+ [data-name="Location Cards Grid"] > div { height: auto; min-width: 0; }
+ [data-name="Location Cards Grid"] p { overflow-wrap: anywhere; }
+}
+/* Keep every section within the viewport, including 320px phones. */
+html, body { width: 100%; min-width: 0; }
+.homepage { width: 100%; min-width: 0; }
+@media (max-width: 767px) {
+ .homepage div, .homepage a { min-width: 0; }
+ .homepage div:not([class*="absolute"]), .homepage a { max-width: 100%; }
+ .homepage [class*="whitespace-nowrap"] { white-space: normal; }
+ .homepage p { overflow-wrap: break-word; }
+ .homepage [data-name="Desktop Navigation Links"] { flex-wrap: wrap; overflow: visible; gap: 12px 20px; }
+ .homepage [data-name="Desktop Navigation Links"] a { flex: 0 0 auto; }
+ [data-name="Brain Hologram Graphic Overlay"] > div { padding: 16px; }
+ [data-node-id="2042:2642"] { flex-wrap: wrap; gap: 12px; }
+ [data-node-id="2042:2649"] { font-size: 10px; }
+ [data-name="Floating Trust Badge"] { position: relative; left: auto; bottom: auto; margin: -8px 12px 0; align-self: flex-start; }
+ [data-name="Main Hero Card/Image Replica"] { gap: 0; }
+ [data-name="Location Cards Grid"] > div { flex-direction: column; }
+ [data-name="Location Cards Grid"] > div > div { flex: auto; width: 100%; height: auto; }
+ [data-name="Location Cards Grid"] > div > div:first-child { height: 220px; }
+ [data-name="Location Cards Grid"] [class*="whitespace-nowrap"] { width: auto; }
+ [data-name="Testimonials Grid"] > div { width: 100%; }
+ [data-name="MainFooter"] [data-name="HorizontalBorder"] > div { width: 100%; }
+}
+@media (max-width: 420px) {
+ .homepage > div:not([data-name="MainHeader"]) { padding: 32px 16px; }
+ [data-node-id="2042:2599"] { font-size: 32px; }
+ [data-name="Doctor examining brain scan"] { height: 260px; }
+ [data-name="Doctor Cards Grid"] { grid-template-columns: 1fr; }
+ [data-name="Doctor Cards Grid"] > div { padding: 24px; }
+ [data-name="MainHeader"] > div > div { justify-content: space-between; }
+ [data-name="Link - Logo Container"] { gap: 8px; }
+ [data-node-id="2042:2567"] { font-size: 15px; }
+ [data-node-id="2042:2569"] { font-size: 10px; }
+ [data-name="CTA Buttons"] { gap: 12px; }
+ [data-name="CTA Buttons"] > a { justify-content: center; width: 100%; }
+ [data-node-id="2042:2642"] > div:last-child { display: none; }
+ [data-name="Copyright Bar"] > div:last-child { flex-wrap: wrap; gap: 12px; }
+}
+/* About page: fluid sections in the same order as the Figma screen. */
+.about-page > div { translate: 0 0 !important; left: auto !important; right: auto !important; top: auto !important; }
+.about-page > [data-name="HeroSection"] { order: 0; min-height: 360px; padding-right: max(24px,calc((100% - 1216px)/2)) !important; }
+.about-page > [data-name="DoctorProfileSection"] { order: 1; grid-template-rows: auto; padding-inline: max(24px,calc((100% - 1216px)/2)); }
+.about-page > [data-node-id="2097:674"] { order: 2; overflow: visible; }
+.about-page > [data-name="Section - WhyChooseDoctor"] { order: 3; grid-template-rows: auto; }
+.about-page > [data-name="GallerySection"] { order: 4; }
+.about-page > [data-name="Section - CallToActionBanner"] { order: 5; width: calc(100% - 48px); max-width: 1216px; margin-block: 48px; padding: 32px; }
+.about-page > [data-name="MainFooter"] { order: 6; }
+.about-page > [data-name="MainHeader"] { order: -1; top: 0 !important; }
+.about-page [data-name="Section - ExpertiseAndExperience"] { position: relative; inset: auto; translate: none; width: 100%; grid-template-rows: auto; }
+.about-page div { min-width: 0; }
+.about-page [class*="whitespace-nowrap"] { white-space: normal; }
+.about-page [data-name="HeroSection"] > div { width: 100%; max-width: 1216px; }
+.about-page [data-node-id="2096:2"] { top: 20px; left: auto; right: 0; width: 300px; }
+.about-page [data-name="HeroSection"] p { max-width: 600px; }
+.about-page [data-name="6-Card Image Grid"] { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); }
+@media(max-width: 1000px) {
+ .about-page > [data-name="DoctorProfileSection"] { grid-template-columns: 1fr 2fr; }
+ .about-page > [data-name="DoctorProfileSection"] > div { grid-column: auto; grid-row: auto; }
+ .about-page [data-name="Doctor Credentials & Education Column"] { grid-column: 1 / -1 !important; display: grid; grid-template-columns: 1fr 1fr; }
+ .about-page [data-node-id="2096:2"] { width: 220px; opacity: .6; }
+ .about-page [data-name="HeroSection"] p { max-width: 65%; }
+ .about-page [data-name="6-Card Image Grid"] { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media(max-width: 767px) {
+ .about-page > [data-name="HeroSection"] { border-bottom-right-radius: 60px; min-height: 0; }
+ .about-page [data-name="HeroSection"] p { max-width: 100%; }
+ .about-page [data-node-id="2096:2"] { position: relative; inset: auto; width: 200px; margin-inline: auto; opacity: 1; }
+ .about-page > [data-name="DoctorProfileSection"], .about-page > [data-name="Section - WhyChooseDoctor"], .about-page [data-name="Section - ExpertiseAndExperience"] { display: flex; flex-direction: column; gap: 24px; }
+ .about-page > [data-name="DoctorProfileSection"] > div, .about-page > [data-name="Section - WhyChooseDoctor"] > div { width: 100%; }
+ .about-page [data-name="Section - ExpertiseAndExperience"] > div { width: 100%; }
+ .about-page [data-name="Doctor Bio Details"] div { max-width: 100%; }
+ .about-page [data-name="Doctor Bio Details"] [data-name="Paragraph"] { flex-wrap: wrap; }
+ .about-page [data-name="6-Card Image Grid"] { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .about-page > [data-name="Section - CallToActionBanner"] { flex-direction: column; align-items: flex-start; gap: 24px; margin-block: 24px; }
+ .about-page [data-name="Areas of Expertise (Left Card)"] > div:last-child { flex-wrap: wrap; }
+ .about-page [data-name="Professional Experience (Right Card)"] { padding: 20px; }
+}
+.about-page [data-name="HeroSection"] > [data-node-id="2078:1014"] { margin-inline: 0; align-self: flex-start; max-width: 700px; }
+.about-page [data-node-id="2078:999"] { left: auto; right: max(24px,calc((100% - 1216px)/2)); width: 32%; padding: 0; margin: 0; opacity: 1; }
+.about-page [data-node-id="2078:1000"] { width: 100%; height: 300px; }
+.about-page [data-node-id="2078:1001"] { height: 300px; flex: auto; overflow: visible; }
+.about-page [data-node-id="2096:2"] { top: 16px; width: 100%; }
+.about-page [data-node-id="2078:981"] { color: #475569; }
+.about-page [data-node-id="2078:983"] { color: #fa4d2b; font-weight: 600; }
+@media(max-width:767px) {
+ .about-page [data-node-id="2078:999"] { position: relative; inset: auto; width: 100%; order: 2; }
+ .about-page [data-node-id="2078:1000"], .about-page [data-node-id="2078:1001"] { height: 240px; }
+ .about-page [data-node-id="2096:2"] { width: 240px; margin-inline: auto; top: 0; }
+ .about-page [data-node-id="2078:1017"] { font-size: 34px; }
+ .about-page [data-node-id="2078:1017"] p { line-height: 1.2; }
+}
+.about-hero { order: 0; width: 100%; background: linear-gradient(103deg,#fff 0%,#eaa79a 104.69%); border-bottom-right-radius: 139px; }
+.about-hero-inner { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0,1fr); align-items: center; gap: 48px; max-width: 1216px; min-height: 378px; margin: 0 auto; padding: 48px 0; }
+.about-hero-copy { min-width: 0; }
+.about-eyebrow { margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: 1.2px; }
+.about-hero h1 { margin: 0 0 20px; font-size: 48px; font-weight: 800; line-height: 1.25; letter-spacing: -1.2px; color: #0a2540; }
+.about-hero h1 span { color: #fa4d2b; }
+.about-description { max-width: 576px; margin: 0; font-size: 16px; line-height: 24px; color: #475569; }
+.about-hero-art { width: 100%; height: 265px; display: flex; align-items: center; justify-content: center; }
+.about-hero-art img { display: block; position: static; width: 270px; height: 265px; max-width: 100%; object-fit: contain; }
+@media(max-width:1280px) { .about-hero-inner { margin-inline: 32px; } }
+@media(max-width:900px) { .about-hero-inner { gap:24px; } .about-hero h1 { font-size:36px; } }
+@media(max-width:600px) {
+ .about-hero { border-bottom-right-radius: 64px; }
+ .about-hero-inner { grid-template-columns: 1fr; gap: 24px; margin-inline: 20px; padding-block: 36px; }
+ .about-hero h1 { font-size: 32px; letter-spacing: -.7px; }
+ .about-hero-art { height: 220px; }
+ .about-hero-art img { width: 225px; height: 220px; }
+}
+.about-page [data-name="Consultation Time Highlight Card"] { gap: 20px; align-items: center; }
+.about-page [data-node-id="2078:1065"] { flex: 0 0 auto; }
+.about-page [data-node-id="2078:1072"], .about-page [data-node-id="2078:1074"] { white-space: nowrap; }
+.about-page [data-node-id="2078:1075"] { flex: 1 1 0; min-width: 0; max-width: none; }
+.about-page [data-node-id="2078:1075"] > div { padding-right: 0; }
+@media(max-width:600px) {
+ .about-page [data-name="Consultation Time Highlight Card"] { flex-direction: column; align-items: flex-start; gap: 16px; }
+ .about-page [data-node-id="2078:1075"] { border-left: 0; border-top: 1px solid #bae6fd; padding-top: 12px; width: 100%; }
+ .about-page [data-node-id="2078:1075"] > div { padding-left: 0; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* The same shared header and footer are used on every page. */
+.booking-page > [data-name="MainFooter"] { margin-top: 0; }
+.booking-page > main { width: 100%; flex: 1; }
+
+
