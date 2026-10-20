@@ -1,0 +1,7 @@
+/* Mobile gallery: one photo plus a preview of the next. */
+@media(max-width:767px) {
+ .homepage [data-name="GallerySection"] :is([data-name="6-Card Image Grid"], [data-name="Gallery Grid: 6 Items"]) { display:flex !important; flex-direction:row; flex-wrap:nowrap; justify-content:flex-start; align-items:stretch; width:100%; min-width:0; gap:14px; overflow-x:auto; overflow-y:hidden; padding:4px 0 16px; scroll-snap-type:x mandatory; scroll-padding-inline:0; overscroll-behavior-x:contain; scrollbar-width:thin; scrollbar-color:#fa4d2b #ffffff70; }
+ .homepage [data-name="GallerySection"] :is([data-name="6-Card Image Grid"], [data-name="Gallery Grid: 6 Items"]) > div { flex:0 0 84%; width:84%; min-width:0; scroll-snap-align:start; }
+ .homepage [data-name="GallerySection"] [data-name="6-Card Image Grid"] > div > div:first-child { aspect-ratio:4/3; width:100%; }
+ .homepage [data-name="GallerySection"] [data-name="Gallery Grid: 6 Items"] > div > div:first-child { height:auto; aspect-ratio:4/3; }
+}

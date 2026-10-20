@@ -6,7 +6,7 @@ export function SiteFooter() {
   return <div className="neuro-footer" data-name="MainFooter" id="contact">
     <footer className="neuro-footer-inner">
       <div className="footer-intro">
-        <Link href="/" className="footer-brand"><span className="footer-brand-icon"><img src="/figma/imgContainer28.svg" width="24" height="24" alt="" /></span><span><strong>NeuroCare Clinic</strong><small>Expert Neurology Care</small></span></Link>
+        <Link href="/" className="footer-brand"><span className="footer-brand-icon"><img src="/figma/nav.png" width="48" height="48" alt="" /></span><span><strong>NeuroCare Clinic</strong><small>Expert Neurology Care</small></span></Link>
         <p>Better brain. Better life.<br />Compassionate care, every step of the way.</p>
         <Link className="footer-appointment" href="/book-appointment">Book an appointment <span aria-hidden="true">↗</span></Link>
       </div>
@@ -22,5 +22,6 @@ export function SiteFooter() {
     </footer>
   </div>;
 }
+
 
 

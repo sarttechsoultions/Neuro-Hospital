@@ -1,0 +1,55 @@
+/* About-page layouts: avoid shrinking text into fixed Figma columns. */
+@media(max-width:900px) {
+ .about-page [data-name="Section - ExpertiseAndExperience"] { display:flex; flex-direction:column; gap:24px; }
+ .about-page [data-name="Section - ExpertiseAndExperience"] > div { width:100%; }
+}
+@media(max-width:767px) {
+ .about-page > div:not(.site-header):not(.neuro-footer) { padding:32px 20px; }
+ .about-page [data-name="Doctor Bio Details"] [data-name="Paragraph"] { display:block; }
+ .about-page [data-name="Doctor Bio Details"] [data-name="Paragraph"] > div { display:inline; margin:0; }
+ .about-page [data-name="Doctor Bio Details"] [data-name="Paragraph"] > div > p { display:inline; }
+ .about-page [data-name="Doctor Bio Details"] [data-name="Paragraph"] > div > p::after { content:' '; }
+ .about-page [data-name="Doctor Bio Details"] [data-name="Paragraph"]:first-child { margin-bottom:12px; }
+ .about-page [data-node-id="2094:613"] > div { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; align-items:stretch; }
+ .about-page [data-node-id="2094:613"] > div > div { width:100%; padding:16px 10px; }
+ .about-page [data-node-id="2094:613"] > div > div > div:last-child > div { padding-inline:0; }
+ .about-page [data-node-id="2094:613"] p { overflow-wrap:normal; word-break:normal; }
+ .about-page [data-node-id="2094:607"], .about-page [data-node-id="2094:646"] { padding:22px 18px; }
+ .about-page [data-node-id="2094:671"] { padding-right:0; flex:1; }
+ .about-page [data-node-id="2078:1205"] { grid-template-columns:1fr; grid-template-rows:auto; gap:20px; padding-top:20px; }
+ .about-page [data-node-id="2078:1205"] > div { min-height:48px; }
+ .about-page [data-node-id="2078:1205"] [class*="whitespace-nowrap"] { white-space:normal; flex-shrink:1; }
+ .about-page [data-name="Doctor Credentials & Education Column"] { gap:12px; }
+ .about-page [data-name="Doctor Credentials & Education Column"] > div { padding:12px; }
+ .about-page [data-name="Doctor Credentials & Education Column"] > div > div:last-child { flex:1; min-width:0; }
+ .about-page [data-node-id="2094:561"], .about-page [data-node-id="2094:562"] { width:100%; text-align:center; }
+ .about-page [data-name="GallerySection"] [data-name="Heading 2"] { align-items:center; text-align:center; }
+ .about-page [data-name="GallerySection"] p { text-align:center; }
+ .about-page [data-name="6-Card Image Grid"] { gap:16px 12px; }
+ .about-page [data-name="6-Card Image Grid"] > div { min-width:0; }
+ .about-page > [data-name="Section - CallToActionBanner"] { width:calc(100% - 40px); padding:24px 20px; }
+ .about-page [data-node-id="2078:1250"] { width:100%; }
+ .about-page [data-node-id="2078:1250"] > div { align-items:flex-start; gap:14px; }
+ .about-page [data-node-id="2078:1251"] { width:44px; height:44px; }
+ .about-page [data-node-id="2078:1252"] { width:26px; height:26px; }
+ .about-page [data-node-id="2078:1256"] { flex:1; min-width:0; }
+ .about-page [data-node-id="2078:1258"] { font-size:20px; }
+ .about-page [data-node-id="2078:1258"] p { line-height:28px; }
+ .about-page [data-node-id="2078:1261"] { width:100%; }
+ .about-page [data-node-id="2078:1262"] { width:100%; justify-content:center; }
+}
+@media(max-width:380px) {
+ .about-page [data-name="Doctor Credentials & Education Column"] { grid-template-columns:1fr; }
+ .about-page [data-node-id="2078:1045"] { font-size:26px; }
+}
+@media(max-width:767px) {
+ .about-page [data-node-id="2078:1205"] > div { grid-column:auto !important; grid-row:auto !important; height:auto; min-height:52px; width:100%; }
+ .about-page [data-node-id="2078:1205"] > div > div:last-child { flex:1 1 0; width:auto; min-width:0; }
+ .about-page [data-node-id="2078:1205"] > div > div:last-child div { width:100%; flex-shrink:1; }
+ .about-page [data-node-id="2078:1205"] p { word-break:normal; overflow-wrap:normal; }
+ .about-page [data-node-id="2078:1205"] { display:flex; flex-direction:column; gap:20px; }
+ .about-page [data-node-id="2078:1199"] { height:280px; }
+ .about-page [data-node-id="2078:1199"] img { left:0; width:100%; object-fit:cover; }
+ .about-page [data-name="GallerySection"] [data-node-id="2094:562"] { align-items:center; }
+ .about-page [data-name="GallerySection"] [data-node-id="2094:562"] div { width:100%; align-items:center; white-space:normal; }
+}

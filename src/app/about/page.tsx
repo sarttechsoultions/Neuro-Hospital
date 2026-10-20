@@ -1,3 +1,5 @@
+import "@/components/gallery-scroll.css";
+import "./responsive.css";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 const imgPngtreeAnatomicalHumanHeadWithLabeled207057361 = "/figma/about/imgPngtreeAnatomicalHumanHeadWithLabeled207057361.png";
 const imgDrShaitanSinghChoudharyNeurologist = "/figma/about/imgDrShaitanSinghChoudharyNeurologist.png";
@@ -702,6 +704,8 @@ export default function Desktop2() {
     </div>
   );
 }
+
+
 
 
 

@@ -1,3 +1,4 @@
+import "@/components/gallery-scroll.css";
 import "./hero-fonts.css";
 import "./mobile-sections.css";
 import "./testimonials.css";
@@ -1063,6 +1064,7 @@ export default function Desktop1() {
     </div>
   );
 }
+
 
 
 
