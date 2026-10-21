@@ -1,11 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
-import { usePathname } from "next/navigation";
+import { useEffect, useState, useRef } from "react";
 import "./scroll-controls.css";
 
-const selector = '.home-gallery-rail, .about-gallery-rail, [data-name="Location Cards Grid"], [data-name="Doctor Cards Grid"], [data-name="Services 8-Grid"], [data-name="Testimonials Grid"], [data-name="6-Card Image Grid"]';
 
 function RailControls({ rail }: { rail: HTMLElement }) {
   const [positions, setPositions] = useState<number[]>([]);
@@ -38,17 +35,11 @@ function RailControls({ rail }: { rail: HTMLElement }) {
 }
 
 export function ScrollControls() {
-  const pathname = usePathname();
-  const [rails, setRails] = useState<{ rail: HTMLElement; mount: HTMLElement }[]>([]);
+  const mount = useRef<HTMLDivElement>(null);
+  const [rail, setRail] = useState<HTMLElement | null>(null);
   useEffect(() => {
-    const found = Array.from(document.querySelectorAll<HTMLElement>(selector)).map(rail => {
-      const mount = document.createElement("div");
-      mount.className = "rail-controls-mount";
-      rail.insertAdjacentElement("afterend", mount);
-      return { rail, mount };
-    });
-    setRails(found);
-    return () => found.forEach(({ mount }) => mount.remove());
-  }, [pathname]);
-  return <>{rails.map(({ rail, mount }, i) => createPortal(<RailControls rail={rail} />, mount, `${pathname}-${i}`))}</>;
+    const previous = mount.current?.previousElementSibling;
+    if (previous instanceof HTMLElement) setRail(previous);
+  }, []);
+  return <div ref={mount} className="rail-controls-mount">{rail ? <RailControls rail={rail} /> : null}</div>;
 }

@@ -59,3 +59,18 @@
 .home-gallery-rail img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
 .home-gallery-rail:focus-visible { outline:2px solid #0284c7; outline-offset:5px; }
 @media(max-width:767px) { .homepage #gallery.home-gallery { padding:36px 20px 28px; margin-top:24px; } .home-gallery-heading>p { font-size:16px; line-height:22px; } .home-gallery-heading h2 { font-size:28px; line-height:34px; } .home-gallery-heading>span { font-size:14px; line-height:22px; } .home-gallery-rail figure { flex-basis:80%; width:80%; height:auto; aspect-ratio:1; } .homepage .home-gallery-rail { gap:16px; } }
+/* Compact metrics retain three equal columns without label overflow. */
+@media(max-width:767px) {
+ .homepage .care-stats { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+ .homepage .care-stat { gap:8px; align-items:center; min-width:0; }
+ .homepage .care-stat>span:last-child { min-width:0; flex:1; }
+ .homepage .care-stat-icon { flex:0 0 30px; width:30px; height:30px; border-radius:6px; }
+ .homepage .care-stat-icon svg { width:16px; height:16px; }
+ .homepage .care-stat strong { font-size:16px; line-height:22px; white-space:nowrap; }
+ .homepage .care-stat small { font-size:10px; line-height:14px; white-space:normal; overflow-wrap:normal; }
+}
+@media(max-width:380px) {
+ .homepage .care-stats { gap:10px; }
+ .homepage .care-stat { flex-direction:column; align-items:flex-start; gap:6px; }
+ .homepage .care-stat>span:last-child { width:100%; }
+}

@@ -1,3 +1,4 @@
+import { ScrollControls } from "@/components/scroll-controls";
 import "@/components/gallery-scroll.css";
 import "./hero-fonts.css";
 import "./home-design.css";
@@ -388,7 +389,7 @@ export default function Desktop1() {
               </div>
             </div>
           </div>
-        </div>
+        </div><ScrollControls />
       </div>
       <div className="bg-[rgba(250,77,43,0.3)] border-[#f1f5f9] border-solid border-t content-stretch flex flex-col items-center justify-center pb-[30px] pt-[31px] " id="doctors" data-node-id="2042:2743" data-name="DoctorsSection">
         <div className="max-w-[1280px] relative shrink-0 w-full" data-node-id="2042:2744" data-name="Container">
@@ -567,7 +568,7 @@ export default function Desktop1() {
                   </div>
                 </div> */}
               </div>
-            </div>
+            </div><ScrollControls />
           </div>
         </div>
       </div>
@@ -597,7 +598,7 @@ export default function Desktop1() {
             ["/figma/about/imgMriBrainScanEvaluation.png", "Brain MRI scan evaluation"],
             [imgOurTeam, "Our clinic team"],
           ].map(([src, alt]) => <figure key={src}><img src={src} alt={alt} loading="lazy" /></figure>)}
-        </div>
+        </div><ScrollControls />
       </section>      <div className="bg-[rgba(248,250,252,0.7)] border-[#f1f5f9] border-solid border-t content-stretch flex flex-col items-start pb-[30px] pt-[31px] " data-node-id="2047:2955" data-name="TestimonialsSection">
         <div className="max-w-[1280px] relative shrink-0 w-full" data-node-id="2047:2956" data-name="Container">
           <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[48px] items-start max-w-[inherit] relative size-full">
@@ -773,7 +774,7 @@ export default function Desktop1() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div><ScrollControls />
           </div>
         </div>
       </div>

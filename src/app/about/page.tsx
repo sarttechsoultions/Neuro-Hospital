@@ -1,3 +1,4 @@
+import { ScrollControls } from "@/components/scroll-controls";
 import "@/components/gallery-scroll.css";
 import "./responsive.css";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
@@ -399,7 +400,7 @@ export default function Desktop2() {
             ["/figma/about/imgMriBrainScanEvaluation.png", "Brain MRI scan evaluation"],
             ["/figma/about/imgDoctorConsultingAPatient.png", "Doctor discussing care with patients"],
           ].map(([src, alt]) => <figure key={src}><img src={src} alt={alt} loading="lazy" /></figure>)}
-        </div>
+        </div><ScrollControls />
       </section>      <div className="absolute bg-[rgba(250,77,43,0.3)] h-[331px] left-0 overflow-clip top-[975px] w-[1440px]" data-node-id="2097:674">
         <div className="-translate-x-1/2 absolute gap-x-[24px] gap-y-[24px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_248px] left-1/2 top-[41px] w-[1216px]" data-node-id="2094:606" data-name="Section - ExpertiseAndExperience">
           <div className="bg-white border border-[#e2e8f0] border-solid col-[1/span_7] content-stretch flex flex-col gap-[2px] items-start justify-self-stretch pb-[32px] pt-[29px] px-[29px] relative rounded-[16px] row-1 self-start shrink-0" data-node-id="2094:607" data-name="Areas of Expertise (Left Card)">
