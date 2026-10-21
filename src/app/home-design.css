@@ -1,0 +1,61 @@
+.homepage #clinics,.homepage #services { background:#ffcbc1; }
+.homepage #doctors,.homepage #gallery { background:white; }
+.homepage .care-partner { display:grid; grid-template-columns:1.3fr 1fr .8fr; gap:32px; align-items:center; padding:80px max(24px,calc((100% - 1280px)/2)); background:#f8fafc; }
+.care-partner h2 { font-size:32px; font-weight:600; line-height:1.25; margin-bottom:20px; }
+.care-partner p { color:#64748b; font-size:14px; line-height:1.7; margin:12px 0; }
+.care-partner>img { width:100%; height:320px; object-fit:cover; border-radius:20px; }
+.care-partner aside { padding:24px; border-radius:16px; background:white; }
+.care-partner h3 { font-weight:600; }
+.care-stats { display:flex; gap:24px; margin-top:24px; font-size:14px; }
+@media(min-width:768px) {
+.homepage [data-name="Services 8-Grid"] { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
+.homepage [data-name="Gallery Grid: 6 Items"] { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); }
+.homepage [data-name="Gallery Grid: 6 Items"]>div:nth-child(n+5) { display:none; }
+.homepage [data-node-id="2042:2640"] img { transform:none; object-position:center top; }
+}
+@media(max-width:767px) { .homepage .care-partner { display:flex; flex-direction:column; align-items:stretch; padding:36px 20px; } .care-partner h2 { font-size:28px; } }
+/* Services reference: 1442px frame, 1216px content, two rows of four cards. */
+.homepage #services.neurology-services { width:100%; background:#ffcabe; padding:14px max(24px,calc((100% - 1216px)/2)) 56px; }
+.services-heading { text-align:center; margin:0 auto; }
+.services-eyebrow { color:#fa4d2b; font:600 24px/28px Arial,sans-serif; letter-spacing:.6px; margin:0; }
+.services-heading h2 { color:#0a2540; font:600 36px/40px Arial,sans-serif; margin:0 0 16px; }
+.services-intro { color:#475569; font:400 16px/24px 'Hero Poppins',Arial,sans-serif; margin:0; }
+.homepage .neurology-service-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:24px; row-gap:70px; width:100%; max-width:1216px; margin:0 auto; }
+.neurology-service-card { background:#f8fafc; border-radius:24px; padding:24px; min-height:244px; display:flex; flex-direction:column; align-items:flex-start; color:#0f172a; }
+.service-icon { width:48px; height:48px; border-radius:16px; background:rgba(250,77,43,.1); display:flex; align-items:center; justify-content:center; margin-bottom:14px; }
+.service-icon img { width:22px; height:22px; object-fit:contain; }
+.neurology-service-card h3 { font:700 18px/28px Arial,sans-serif; margin:0 0 8px; }
+.neurology-service-card>p { font:400 12px/19.5px Arial,sans-serif; color:#475569; margin:0 0 18px; }
+.service-tags { display:flex; flex-wrap:wrap; gap:6px; list-style:none; padding:0; margin:auto 0 0; }
+.service-tags li { background:#eff6ff; border:1px solid #dbeafe; border-radius:999px; padding:2px 8px; color:#0369a1; font:600 9px/14px Arial,sans-serif; }
+@media(max-width:1050px) { .homepage .neurology-service-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } .services-desktop-break { display:none; } .services-heading { margin-bottom:24px; } }
+@media(max-width:600px) { .homepage #services.neurology-services { padding:32px 20px; } .services-eyebrow { font-size:16px; } .services-heading h2 { font-size:28px; line-height:34px; } .services-intro { font-size:14px; line-height:22px; } .homepage .neurology-service-grid { grid-template-columns:1fr; gap:20px; } .neurology-service-card { min-height:0; } }
+/* Keep the full-resolution hero portrait proportional, without extra zoom. */
+.homepage #home [data-node-id="2042:2640"] img { width:100%; height:100%; object-fit:cover; object-position:center; transform:none; }
+.homepage .care-partner>img { object-fit:cover; object-position:center; }
+/* Care metrics and trust card match the supplied detail references. */
+.homepage .care-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:24px; padding-top:16px; border-top:1px solid #e2e8f0; }
+.care-stat { display:flex; align-items:center; gap:12px; min-width:0; }
+.care-stat-icon { flex:0 0 40px; width:40px; height:40px; display:flex; align-items:center; justify-content:center; background:#dbeafe; color:#0076ac; border-radius:8px; }
+.care-stat-icon svg { width:18px; height:18px; }
+.care-stat strong { display:block; font:700 18px/24px Arial,sans-serif; color:#0f172a; }
+.care-stat small { display:block; font:400 10px/16px Arial,sans-serif; color:#64748b; white-space:nowrap; }
+.homepage .care-partner .care-why { padding:28px; border:1px solid #f1f5f9; border-radius:24px; background:#fff; box-shadow:0 12px 24px -10px #0a254018; }
+.care-why h3 { font:700 18px/28px Arial,sans-serif; color:#0f172a; margin:0 0 20px; }
+.care-why ul { display:flex; flex-direction:column; gap:16px; list-style:none; margin:0; padding:0; }
+.care-why li { display:flex; align-items:flex-start; gap:12px; font:400 14px/20px Arial,sans-serif; color:#475569; }
+.care-why li svg { flex:0 0 16px; width:16px; height:16px; margin-top:2px; }
+@media(max-width:1100px) and (min-width:768px) { .care-stat { gap:6px; } .care-stat-icon { flex-basis:30px; width:30px; height:30px; } .homepage .care-stats { gap:8px; } .care-stat small { white-space:normal; } }
+@media(max-width:380px) { .care-stat { gap:6px; } .care-stat-icon { flex-basis:28px; width:28px; height:28px; } .care-stat small { white-space:normal; } }
+/* Photo-only horizontal gallery from the homepage reference. */
+.homepage #gallery.home-gallery { background:#fff; padding:48px max(24px,calc((100% - 1216px)/2)) 28px; margin-top:48px; }
+.home-gallery-heading { text-align:center; margin:0 auto 20px; }
+.home-gallery-heading>p { color:#fa4d2b; font:600 24px/28px Arial,sans-serif; letter-spacing:.6px; margin:0 0 4px; }
+.home-gallery-heading h2 { color:#0a2540; font:600 36px/40px Arial,sans-serif; margin:0 0 12px; }
+.home-gallery-heading>span { display:block; color:#475569; font:400 16px/24px Arial,sans-serif; }
+.homepage .home-gallery-rail { display:flex; gap:24px; width:100%; max-width:1216px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; margin:0 auto; padding:0; }
+.home-gallery-rail::-webkit-scrollbar { display:none; }
+.home-gallery-rail figure { flex:0 0 320px; width:320px; height:320px; margin:0; overflow:hidden; border:1px solid #e2e8f0; border-radius:16px; scroll-snap-align:start; }
+.home-gallery-rail img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
+.home-gallery-rail:focus-visible { outline:2px solid #0284c7; outline-offset:5px; }
+@media(max-width:767px) { .homepage #gallery.home-gallery { padding:36px 20px 28px; margin-top:24px; } .home-gallery-heading>p { font-size:16px; line-height:22px; } .home-gallery-heading h2 { font-size:28px; line-height:34px; } .home-gallery-heading>span { font-size:14px; line-height:22px; } .home-gallery-rail figure { flex-basis:80%; width:80%; height:auto; aspect-ratio:1; } .homepage .home-gallery-rail { gap:16px; } }

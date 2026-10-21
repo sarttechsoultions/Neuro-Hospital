@@ -15,7 +15,7 @@ export default function SiteHeader() {
     <div className="site-header-inner">
       <Link className="site-logo" href="/" onClick={() => setOpen(false)}>
         <span className="site-logo-icon"><img src="/figma/nav.png" width="48" height="48" alt="" /></span>
-        <span><strong>NeuroCare Clinic</strong><small>Expert Neurology Care</small></span>
+        <span><strong>Dr. Shaitan Singh Choudhary</strong><small>Expert Neurology Care</small></span>
       </Link>
       <button ref={toggle} className="site-menu-toggle" aria-expanded={open} aria-controls="site-navigation" aria-label={open ? "Close navigation menu" : "Open navigation menu"} onClick={() => setOpen(!open)}>
         <span aria-hidden="true">{open ? "✕" : "☰"}</span>

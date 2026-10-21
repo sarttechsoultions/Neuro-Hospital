@@ -53,3 +53,33 @@
  .about-page [data-name="GallerySection"] [data-node-id="2094:562"] { align-items:center; }
  .about-page [data-name="GallerySection"] [data-node-id="2094:562"] div { width:100%; align-items:center; white-space:normal; }
 }
+/* About gallery: peach background and square photo strip. */
+.about-page>.about-gallery { order:4; width:100%; background:#ffcabe; padding:32px max(24px,calc((100% - 1216px)/2)) 16px; }
+.about-gallery header { text-align:center; margin:0 auto 64px; }
+.about-gallery header>p { color:#fa4d2b; font:600 24px/28px Arial,sans-serif; letter-spacing:.6px; margin:0 0 4px; }
+.about-gallery h2 { color:#0a2540; font:600 36px/40px Arial,sans-serif; margin:0 0 14px; }
+.about-gallery header>span { display:block; color:#475569; font:400 16px/24px Arial,sans-serif; }
+.about-page .about-gallery-rail { display:flex; gap:24px; width:100%; max-width:1216px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; margin:0 auto; }
+.about-gallery-rail::-webkit-scrollbar { display:none; }
+.about-gallery-rail figure { flex:0 0 320px; width:320px; height:320px; margin:0; overflow:hidden; border-radius:16px; scroll-snap-align:start; }
+.about-gallery-rail img { display:block; width:100%; height:100%; object-fit:cover; }
+.about-gallery-rail:focus-visible { outline:2px solid #0284c7; outline-offset:4px; }
+@media(max-width:767px) { .about-page>.about-gallery { padding:32px 20px 20px; } .about-gallery header { margin-bottom:28px; } .about-gallery header>p { font-size:16px; } .about-gallery h2 { font-size:28px; line-height:34px; } .about-gallery header>span { font-size:14px; line-height:22px; } .about-gallery-rail figure { flex-basis:80%; width:80%; height:auto; aspect-ratio:1; } .about-page .about-gallery-rail { gap:16px; } }
+/* Appointment banner: flexible copy and a separate, working booking link. */
+.about-page>.about-appointment { order:5; display:flex; align-items:center; justify-content:space-between; gap:32px; width:calc(100% - 48px); max-width:1216px; margin:32px auto; padding:32px; border:1px solid #e0f2fe; border-radius:16px; background:linear-gradient(100deg,#e7f3fd,#f4f9ff); box-shadow:0 4px 20px -2px #091e420d; }
+.about-appointment-content { display:flex; align-items:center; gap:20px; flex:1 1 0; min-width:0; }
+.about-appointment-content>div { flex:1 1 0; min-width:0; }
+.about-appointment-icon { display:flex; align-items:center; justify-content:center; flex:0 0 64px; width:64px; height:64px; border:1px solid #bae6fd; background:#fff; border-radius:50%; }
+.about-appointment-icon img { width:36px; height:36px; }
+.about-appointment h2 { margin:0 0 6px; color:#0f172a; font:700 24px/32px Arial,sans-serif; letter-spacing:-.6px; overflow-wrap:break-word; }
+.about-appointment p { margin:0; color:#475569; font:400 14px/22px Arial,sans-serif; }
+.about-appointment-button { display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto; gap:8px; padding:12px 24px; border-radius:12px; background:#fa4d2b; color:#fff; font:600 14px/20px Arial,sans-serif; white-space:nowrap; box-shadow:0 4px 6px #00000010; }
+.about-appointment-button svg { width:16px; height:16px; }
+.about-appointment-button:hover { background:#e74120; }
+@media(max-width:900px) { .about-page>.about-appointment { flex-direction:column; align-items:flex-start; gap:24px; } .about-appointment-button { margin-left:84px; } }
+@media(max-width:600px) { .about-page>.about-appointment { width:calc(100% - 40px); padding:24px 20px; margin:24px auto; gap:20px; } .about-appointment-content { align-items:flex-start; gap:14px; } .about-appointment-icon { flex-basis:44px; width:44px; height:44px; } .about-appointment-icon img { width:26px; height:26px; } .about-appointment h2 { font-size:20px; line-height:28px; } .about-appointment-button { margin:0; width:100%; white-space:normal; text-align:center; } }
+/* Equal qualification cards, sized by the tallest card's content. */
+.about-page [data-name="Doctor Credentials & Education Column"] { display:grid; grid-template-columns:1fr; grid-auto-rows:1fr; align-items:stretch; }
+.about-page [data-name="Doctor Credentials & Education Column"]>div { height:100%; min-width:0; align-self:stretch; }
+@media(max-width:1000px) { .about-page [data-name="Doctor Credentials & Education Column"] { grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-rows:1fr; } }
+@media(max-width:380px) { .about-page [data-name="Doctor Credentials & Education Column"] { grid-template-columns:1fr; } }

@@ -1,0 +1,10 @@
+.rail-controls-mount { width:100%; min-width:0; flex:0 0 auto; }
+.rail-controls-mount:empty { display:none; }
+.rail-controls { display:flex; align-items:center; justify-content:center; gap:14px; padding:16px 0 4px; }
+.rail-dots { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:2px; }
+.rail-dot { display:flex; align-items:center; justify-content:center; width:24px; height:28px; padding:0; border:0; background:transparent; cursor:pointer; }
+.rail-dot:after { content:""; width:7px; height:7px; background:#a7b7c7; border-radius:999px; transition:width .2s,background .2s; }
+.rail-dot.active:after { width:20px; background:#fa4d2b; }
+.rail-arrow { display:flex; align-items:center; justify-content:center; width:32px; height:32px; border:1px solid #dbe4ec; border-radius:50%; background:#fff; color:#0a2540; font:24px/1 Arial,sans-serif; cursor:pointer; }
+.rail-arrow:disabled { opacity:.35; cursor:default; }
+.rail-controls button:focus-visible { outline:2px solid #0284c7; outline-offset:2px; }

@@ -1,5 +1,6 @@
 import "@/components/gallery-scroll.css";
 import "./hero-fonts.css";
+import "./home-design.css";
 import "./mobile-sections.css";
 import "./testimonials.css";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
@@ -163,7 +164,7 @@ export default function Desktop1() {
               <div className="bg-[#0f172a] border-4 border-solid border-white content-stretch flex flex-col items-start overflow-clip p-[4px] relative rounded-[24px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] shrink-0 w-full" data-node-id="2042:2639" data-name="Background+Border+Shadow">
                 <div className="h-[400px] opacity-85 relative shrink-0 w-full" data-node-id="2042:2640" data-name="Doctor examining brain scan">
                   <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="w-full h-full object-cover object-top" src={imgDoctorExaminingBrainScan} />
+                    <img alt="Dr. Shaitan Singh Choudhary" className="w-full h-full object-cover object-top" src={imgDoctorExaminingBrainScan} />
                   </div>
                 </div>
                 {/* <div className="absolute inset-[0_-0.83px_0_0]" data-node-id="2042:2641" data-name="Brain Hologram Graphic Overlay">
@@ -224,7 +225,11 @@ export default function Desktop1() {
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col gap-[48px] items-start max-w-none py-[30px] w-full" id="clinics" data-node-id="2042:2665" data-name="Container">
+<section className="care-partner"><div><h2>Your Trusted Neurology Care Partner</h2><p>NeuroCare Clinic provides compassionate care for brain, spine and nervous system conditions. Our experienced neurologists use advanced diagnostic technology and personalized treatment plans.</p><div className="care-stats">
+  <div className="care-stat"><span className="care-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3h7v10H5zM3 15h11v6H3zM15 12h6v9h-6z"/><path d="M7 5h3v2H7zm0 4h3v2H7z" fill="#dbeafe"/><circle cx="18" cy="7" r="3"/></svg></span><span><strong>12+</strong><small>Years Experience</small></span></div>
+  <div className="care-stat"><span className="care-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21 3.5 12.5C-2 7 6 0 12 6c6-6 14 1 8.5 6.5Z"/></svg></span><span><strong>8,000+</strong><small>Happy Patients</small></span></div>
+  <div className="care-stat"><span className="care-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4v16h17M7 15l5-5 4 3 5-6"/></svg></span><span><strong>98%</strong><small>Success Rate</small></span></div>
+</div></div><img src="/figma/about/imgMriBrainScanEvaluation.png" alt="Neurologist reviewing brain MRI scans" /><aside className="care-why"><h3>Why Choose Us?</h3><ul>{["Experienced & Skilled Neurologists", "Advanced Diagnostic Facilities", "Personalized Treatment Plans", "Minimally Invasive Procedures", "Patient-Centric Approach"].map(item => <li key={item}><svg aria-hidden="true" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#0076ac"/><path d="m4.5 8 2.3 2.2 4.7-4.6" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg><span>{item}</span></li>)}</ul></aside></section>      <div className="content-stretch flex flex-col gap-[48px] items-start max-w-none py-[30px] w-full" id="clinics" data-node-id="2042:2665" data-name="Container">
         <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="2042:2666" data-name="Container">
           <div className="content-stretch flex flex-col gap-[10px] items-center justify-center pt-[5px] relative shrink-0" data-node-id="2042:2667" data-name="Container">
             <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#fa4d2b] text-[24px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="2042:2668">
@@ -566,321 +571,34 @@ export default function Desktop1() {
           </div>
         </div>
       </div>
-      <div className="bg-white content-stretch flex flex-col items-start pb-[20px] pt-[30px] " id="services" data-node-id="2046:2834" data-name="ServicesSection">
-        <div className="content-stretch flex flex-col gap-[48px] items-start max-w-[1280px] relative shrink-0 w-full" data-node-id="2046:2835" data-name="Container">
-          <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="2046:2836" data-name="Section Header">
-            <div className="content-stretch flex flex-col gap-[10px] items-center justify-center pt-[5px] relative shrink-0 w-[756px]" data-node-id="2046:2837" data-name="Container">
-              <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#fa4d2b] text-[24px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="2046:2838">
-                <p className="leading-[16px]">OUR SERVICES</p>
-              </div>
-              <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-node-id="2046:2839" data-name="Heading 2">
-                <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#0a2540] text-[36px] whitespace-nowrap" data-node-id="2046:2840">
-                  <p className="leading-[40px]">Advanced Neurology Services</p>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-center justify-center max-w-[672px] pt-px relative shrink-0 w-full" data-node-id="2046:2841" data-name="Container">
-                <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[16px] text-center whitespace-nowrap" data-node-id="2046:2842">
-                  <p className="leading-[24px] mb-0">From routine checkups to complex neurological treatments, we offer a full range of specialized</p>
-                  <p className="leading-[24px]">care for all age groups.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="content-stretch flex gap-[16px] items-start justify-center relative shrink-0 w-full" data-node-id="2046:2847" data-name="Services 8-Grid">
-            <div className="bg-[rgba(248,250,252,0.5)] border border-[rgba(219,234,254,0.8)] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[20px] items-center min-w-px p-[21px] relative rounded-[16px]" data-node-id="2046:2848" data-name="1. Stroke Care">
-              <div className="h-[68px] relative shrink-0 w-[56px]" data-node-id="2046:2849" data-name="Margin">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pb-[12px] relative size-full">
-                  <div className="bg-[rgba(250,77,43,0.1)] content-stretch flex items-center justify-center relative rounded-[16px] shrink-0 size-[56px]" data-node-id="2046:2850" data-name="Overlay">
-                    <div className="relative shrink-0 size-[24px]" data-node-id="2046:2851" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer12} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[14px] text-center whitespace-nowrap" data-node-id="2046:2853">
-                <p className="leading-[20px]">Stroke Care</p>
-              </div>
-            </div>
-            <div className="bg-[rgba(248,250,252,0.5)] border border-[rgba(219,234,254,0.8)] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-between min-w-px p-[21px] relative rounded-[16px]" data-node-id="2046:2854" data-name="2. Epilepsy Treatment">
-              <div className="h-[68px] relative shrink-0 w-[56px]" data-node-id="2046:2855" data-name="Margin">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pb-[12px] relative size-full">
-                  <div className="bg-[rgba(250,77,43,0.1)] content-stretch flex items-center justify-center relative rounded-[16px] shrink-0 size-[56px]" data-node-id="2046:2856" data-name="Overlay">
-                    <div className="h-[24.003px] relative shrink-0 w-[18.012px]" data-node-id="2046:2857" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer13} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative shrink-0" data-node-id="2046:2859" data-name="Heading 3">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center pl-[14.63px] pr-[14.64px] relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[14px] text-center whitespace-nowrap" data-node-id="2046:2860">
-                    <p className="leading-[20px] mb-0">Epilepsy</p>
-                    <p className="leading-[20px]">Treatment</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[rgba(248,250,252,0.5)] border border-[rgba(219,234,254,0.8)] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-between min-w-px p-[21px] relative rounded-[16px]" data-node-id="2046:2861" data-name="3. Headache & Migraine">
-              <div className="h-[68px] relative shrink-0 w-[56px]" data-node-id="2046:2862" data-name="Margin">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pb-[12px] relative size-full">
-                  <div className="bg-[rgba(250,77,43,0.1)] content-stretch flex items-center justify-center relative rounded-[16px] shrink-0 size-[56px]" data-node-id="2046:2863" data-name="Overlay">
-                    <div className="relative shrink-0 size-[24px]" data-node-id="2046:2864" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer14} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative shrink-0" data-node-id="2046:2866" data-name="Heading 3">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center px-[7.89px] relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[14px] text-center whitespace-nowrap" data-node-id="2046:2867">
-                    <p className="leading-[20px] mb-0">{`Headache &`}</p>
-                    <p className="leading-[20px]">Migraine</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[rgba(248,250,252,0.5)] border border-[rgba(219,234,254,0.8)] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-between min-w-px p-[21px] relative rounded-[16px]" data-node-id="2046:2868" data-name="4. Parkinson's Disease">
-              <div className="h-[68px] relative shrink-0 w-[56px]" data-node-id="2046:2869" data-name="Margin">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pb-[12px] relative size-full">
-                  <div className="bg-[rgba(250,77,43,0.1)] content-stretch flex items-center justify-center relative rounded-[16px] shrink-0 size-[56px]" data-node-id="2046:2870" data-name="Overlay">
-                    <div className="h-[24px] relative shrink-0 w-[27.016px]" data-node-id="2046:2871" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer15} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative shrink-0" data-node-id="2046:2873" data-name="Heading 3">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center px-[8.66px] relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[14px] text-center whitespace-nowrap" data-node-id="2046:2874">
-                    <p className="leading-[20px] mb-0">{`Parkinson's`}</p>
-                    <p className="leading-[20px]">Disease</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[rgba(248,250,252,0.5)] border border-[rgba(219,234,254,0.8)] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-between min-w-px p-[21px] relative rounded-[16px]" data-node-id="2046:2875" data-name="5. Multiple Sclerosis">
-              <div className="h-[68px] relative shrink-0 w-[56px]" data-node-id="2046:2876" data-name="Margin">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pb-[12px] relative size-full">
-                  <div className="bg-[rgba(250,77,43,0.1)] content-stretch flex items-center justify-center relative rounded-[16px] shrink-0 size-[56px]" data-node-id="2046:2877" data-name="Overlay">
-                    <div className="h-[24px] relative shrink-0 w-[21px]" data-node-id="2046:2878" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer16} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative shrink-0" data-node-id="2046:2880" data-name="Heading 3">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center pl-[16.84px] pr-[16.86px] relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[14px] text-center whitespace-nowrap" data-node-id="2046:2881">
-                    <p className="leading-[20px] mb-0">Multiple</p>
-                    <p className="leading-[20px]">Sclerosis</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[rgba(248,250,252,0.5)] border border-[rgba(219,234,254,0.8)] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-between min-w-px p-[21px] relative rounded-[16px]" data-node-id="2046:2882" data-name="6. Neuromuscular Disorders">
-              <div className="h-[68px] relative shrink-0 w-[56px]" data-node-id="2046:2883" data-name="Margin">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pb-[12px] relative size-full">
-                  <div className="bg-[rgba(250,77,43,0.1)] content-stretch flex items-center justify-center relative rounded-[16px] shrink-0 size-[56px]" data-node-id="2046:2884" data-name="Overlay">
-                    <div className="h-[15px] relative shrink-0 w-[27px]" data-node-id="2046:2885" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer17} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative shrink-0" data-node-id="2046:2887" data-name="Heading 3">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[14px] text-center whitespace-nowrap" data-node-id="2046:2888">
-                    <p className="leading-[20px] mb-0">Neuromuscular</p>
-                    <p className="leading-[20px]">Disorders</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[rgba(248,250,252,0.5)] border border-[rgba(219,234,254,0.8)] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-between min-w-px p-[21px] relative rounded-[16px]" data-node-id="2046:2889" data-name="7. Memory & Dementia">
-              <div className="h-[68px] relative shrink-0 w-[56px]" data-node-id="2046:2890" data-name="Margin">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pb-[12px] relative size-full">
-                  <div className="bg-[rgba(250,77,43,0.1)] content-stretch flex items-center justify-center relative rounded-[16px] shrink-0 size-[56px]" data-node-id="2046:2891" data-name="Overlay">
-                    <div className="relative shrink-0 size-[24px]" data-node-id="2046:2892" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer12} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative shrink-0" data-node-id="2046:2894" data-name="Heading 3">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center pl-[14px] pr-[14.02px] relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[14px] text-center whitespace-nowrap" data-node-id="2046:2895">
-                    <p className="leading-[20px] mb-0">{`Memory &`}</p>
-                    <p className="leading-[20px]">Dementia</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[rgba(248,250,252,0.5)] border border-[rgba(219,234,254,0.8)] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-between min-w-px p-[21px] relative rounded-[16px]" data-node-id="2046:2896" data-name="8. Spine & Nerve Disorders">
-              <div className="h-[68px] relative shrink-0 w-[56px]" data-node-id="2046:2897" data-name="Margin">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pb-[12px] relative size-full">
-                  <div className="bg-[rgba(250,77,43,0.1)] content-stretch flex items-center justify-center relative rounded-[16px] shrink-0 size-[56px]" data-node-id="2046:2898" data-name="Overlay">
-                    <div className="h-[24px] relative shrink-0 w-[12px]" data-node-id="2046:2899" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer18} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative shrink-0" data-node-id="2046:2901" data-name="Heading 3">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center pl-[0.41px] pr-[0.42px] relative size-full">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[14px] text-center whitespace-nowrap" data-node-id="2046:2902">
-                    <p className="leading-[20px] mb-0">{`Spine & Nerve`}</p>
-                    <p className="leading-[20px]">Disorders</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section id="services" className="neurology-services" aria-labelledby="services-heading">
+        <header className="services-heading"><p className="services-eyebrow">OUR SERVICES</p><h2 id="services-heading">Advanced Neurology Services</h2><p className="services-intro">From routine checkups to complex neurological treatments, we offer a full range of specialized<br className="services-desktop-break" /> care for all age groups.</p></header>
+        <div className="neurology-service-grid">
+          {[
+            { title: "Stroke Care", icon: imgContainer12, description: "Emergency thrombolysis protocols, post-stroke neuro-rehabilitation, and targeted secondary vascular risk prevention.", tags: ["Emergency Protocol", "Motor Rehab"] },
+            { title: "Epilepsy Treatment", icon: imgContainer13, description: "Comprehensive seizure management, video EEG monitoring diagnostics, and customized antiepileptic drug therapies.", tags: ["EEG Diagnostics", "Seizure Control"] },
+            { title: "Headache & Migraine", icon: imgContainer14, description: "Specialized clinic for chronic migraine relief, therapeutic botox interventions, and cluster headache protocols.", tags: ["Botox Therapy", "Trigger Analysis"] },
+            { title: "Parkinson's Disease", icon: imgContainer15, description: "Targeted tremor and movement disorder management, motor rehabilitation plans, and advanced pharmacotherapy.", tags: ["Movement Care", "Gait Training"] },
+            { title: "Multiple Sclerosis", icon: imgContainer16, description: "Innovative immunomodulatory therapies, acute relapse management, and long-term functional mobility optimization.", tags: ["Immunotherapy", "Relapse Care"] },
+            { title: "Neuromuscular Disorders", icon: imgContainer17, description: "Accurate diagnostic EMG/NCV studies, myasthenia gravis treatment, peripheral neuropathy and muscle weakness care.", tags: ["NCV / EMG Tests", "Neuropathy"] },
+            { title: "Memory & Dementia", icon: imgContainer12, description: "Early cognitive assessment, Alzheimer's diagnosis, supportive memory therapy and holistic family guidance.", tags: ["Cognitive Care", "Alzheimer's Help"] },
+            { title: "Spine & Nerve Disorders", icon: imgContainer18, description: "Evidence-based therapy for sciatica, cervical and lumbar spondylosis, nerve compression, and radiculopathy.", tags: ["Sciatica Relief", "Spine Health"] },
+          ].map(service => <article className="neurology-service-card" key={service.title}><div className="service-icon"><img src={service.icon} alt="" /></div><h3>{service.title}</h3><p>{service.description}</p><ul className="service-tags" aria-label="Treatments">{service.tags.map(tag => <li key={tag}>{tag}</li>)}</ul></article>)}
         </div>
-      </div>
-      <div className="bg-[rgba(250,77,43,0.3)] content-stretch flex flex-col items-center justify-center py-[30px] " id="gallery" data-node-id="2046:2904" data-name="GallerySection">
-        <div className="content-stretch flex flex-col gap-[40px] items-start max-w-[1280px] relative shrink-0 w-full" data-node-id="2046:2905" data-name="Container">
-          <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="2046:2906" data-name="Container">
-            <div className="content-stretch flex flex-col gap-[10px] items-center justify-center pt-[5px] relative shrink-0" data-node-id="2046:2907" data-name="Container">
-              <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#fa4d2b] text-[24px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="2046:2908">
-                <p className="leading-[16px]">OUR GALLERY</p>
-              </div>
-              <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-node-id="2046:2909" data-name="Heading 2">
-                <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#0a2540] text-[36px] whitespace-nowrap" data-node-id="2046:2910">
-                  <p className="leading-[40px]">A Glimpse Into Our Care</p>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-px relative shrink-0 w-full" data-node-id="2046:2911" data-name="Container">
-                <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[16px] whitespace-nowrap" data-node-id="2046:2912">
-                  <p className="leading-[24px]">Modern facilities, advanced technology, and a caring environment.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="content-stretch flex gap-[16px] items-start justify-center relative shrink-0 w-full" data-node-id="2046:2917" data-name="Gallery Grid: 6 Items">
-            <div className="bg-[#f8fafc] border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip p-px relative rounded-[16px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2046:2918" data-name="Item 1">
-              <div className="h-[144px] relative shrink-0 w-full" data-node-id="2046:2919" data-name="Container">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
-                  <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2046:2920" data-name="Clinic Reception">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute h-full left-[-20.53%] max-w-none top-0 w-[141.07%]" src={imgClinicReception} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white relative shrink-0 w-full" data-node-id="2046:2921" data-name="Background">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start p-[12px] relative size-full">
-                  <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="2046:2922" data-name="Container">
-                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[12px] text-center whitespace-nowrap" data-node-id="2046:2923">
-                      <p className="leading-[16px]">Clinic Reception</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#f8fafc] border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip p-px relative rounded-[16px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2046:2924" data-name="Item 2">
-              <div className="h-[144px] relative shrink-0 w-full" data-node-id="2046:2925" data-name="Container">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
-                  <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2046:2926" data-name="Consultation Room">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute h-full left-[-20.53%] max-w-none top-0 w-[141.07%]" src={imgConsultationRoom} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white relative shrink-0 w-full" data-node-id="2046:2927" data-name="Background">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start p-[12px] relative size-full">
-                  <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="2046:2928" data-name="Container">
-                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[12px] text-center whitespace-nowrap" data-node-id="2046:2929">
-                      <p className="leading-[16px]">Consultation Room</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#f8fafc] border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip p-px relative rounded-[16px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2046:2930" data-name="Item 3">
-              <div className="h-[144px] relative shrink-0 w-full" data-node-id="2046:2931" data-name="Container">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
-                  <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2046:2932" data-name="EEG Test Room">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute h-full left-[-20.53%] max-w-none top-0 w-[141.07%]" src={imgEegTestRoom} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white relative shrink-0 w-full" data-node-id="2046:2933" data-name="Background">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start p-[12px] relative size-full">
-                  <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="2046:2934" data-name="Container">
-                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[12px] text-center whitespace-nowrap" data-node-id="2046:2935">
-                      <p className="leading-[16px]">EEG Test Room</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#f8fafc] border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip p-px relative rounded-[16px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2046:2936" data-name="Item 4">
-              <div className="h-[144px] relative shrink-0 w-full" data-node-id="2046:2937" data-name="Container">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
-                  <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2046:2938" data-name="MRI Scan Room">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute h-full left-[-20.53%] max-w-none top-0 w-[141.06%]" src={imgMriScanRoom} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white relative shrink-0 w-full" data-node-id="2046:2939" data-name="Background">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start p-[12px] relative size-full">
-                  <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="2046:2940" data-name="Container">
-                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[12px] text-center whitespace-nowrap" data-node-id="2046:2941">
-                      <p className="leading-[16px]">MRI Scan Room</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#f8fafc] border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip p-px relative rounded-[16px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2046:2942" data-name="Item 5">
-              <div className="h-[144px] relative shrink-0 w-full" data-node-id="2046:2943" data-name="Container">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
-                  <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2046:2944" data-name="Spine Treatment Room">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute h-full left-[-20.53%] max-w-none top-0 w-[141.07%]" src={imgSpineTreatmentRoom} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white relative shrink-0 w-full" data-node-id="2046:2945" data-name="Background">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start p-[12px] relative size-full">
-                  <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="2046:2946" data-name="Container">
-                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[12px] text-center whitespace-nowrap" data-node-id="2046:2947">
-                      <p className="leading-[16px]">Spine Treatment Room</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#f8fafc] border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip p-px relative rounded-[16px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2046:2948" data-name="Item 6">
-              <div className="h-[144px] relative shrink-0 w-full" data-node-id="2046:2949" data-name="Container">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
-                  <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2046:2950" data-name="Our Team">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img alt="" className="absolute h-full left-[-20.53%] max-w-none top-0 w-[141.07%]" src={imgOurTeam} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white relative shrink-0 w-full" data-node-id="2046:2951" data-name="Background">
-                <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start p-[12px] relative size-full">
-                  <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="2046:2952" data-name="Container">
-                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#1e293b] text-[12px] text-center whitespace-nowrap" data-node-id="2046:2953">
-                      <p className="leading-[16px]">Our Team</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      </section>
+      <section id="gallery" className="home-gallery" aria-labelledby="gallery-heading">
+        <header className="home-gallery-heading"><p>OUR GALLERY</p><h2 id="gallery-heading">A Glimpse Into Our Care</h2><span>Modern facilities, advanced technology, and a caring environment.</span></header>
+        <div className="home-gallery-rail" tabIndex={0} role="region" aria-label="Clinic photo gallery, scroll to see more photos">
+          {[
+            ["/figma/about/imgStrokePatientCare.png", "Doctor consulting an elderly patient"],
+            ["/figma/about/imgEegTestInProgress.png", "Neurologist performing an EEG test"],
+            ["/figma/about/imgPhysiotherapySession.png", "Patient receiving physiotherapy care"],
+            [imgClinicReception, "Patients at the clinic reception"],
+            ["/figma/about/imgMriBrainScanEvaluation.png", "Brain MRI scan evaluation"],
+            [imgOurTeam, "Our clinic team"],
+          ].map(([src, alt]) => <figure key={src}><img src={src} alt={alt} loading="lazy" /></figure>)}
         </div>
-      </div>
-      <div className="bg-[rgba(248,250,252,0.7)] border-[#f1f5f9] border-solid border-t content-stretch flex flex-col items-start pb-[30px] pt-[31px] " data-node-id="2047:2955" data-name="TestimonialsSection">
+      </section>      <div className="bg-[rgba(248,250,252,0.7)] border-[#f1f5f9] border-solid border-t content-stretch flex flex-col items-start pb-[30px] pt-[31px] " data-node-id="2047:2955" data-name="TestimonialsSection">
         <div className="max-w-[1280px] relative shrink-0 w-full" data-node-id="2047:2956" data-name="Container">
           <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[48px] items-start max-w-[inherit] relative size-full">
             <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="2047:2957" data-name="Container">
@@ -1064,6 +782,11 @@ export default function Desktop1() {
     </div>
   );
 }
+
+
+
+
+
 
 
 

@@ -385,164 +385,22 @@ export default function Desktop2() {
           </div>
         </div>
       </div>
-      <div className="-translate-x-1/2 absolute bg-gradient-to-r border border-[#e0f2fe] border-solid content-stretch flex from-[#e7f3fd] items-center justify-between left-1/2 overflow-clip pb-[33px] pl-[33px] pr-[32.99px] pt-[41px] rounded-[16px] shadow-[0px_4px_20px_-2px_rgba(9,30,66,0.05),0px_0px_1px_1px_rgba(9,30,66,0.05)] to-[#f4f9ff] top-[2264.3px] via-1/2 via-[#eef7ff] w-[1216px]" data-node-id="2078:1249" data-name="Section - CallToActionBanner">
-        <div className="relative shrink-0" data-node-id="2078:1250" data-name="Container">
-          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[20px] items-center relative size-full">
-            <div className="bg-white border border-[#bae6fd] border-solid content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex items-center justify-center p-px relative rounded-[9999px] shrink-0 size-[64px]" data-node-id="2078:1251" data-name="Decorative Brain Icon">
-              <div className="relative shrink-0 size-[36px]" data-node-id="2078:1252" data-name="SVG">
-                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg9} />
-              </div>
-            </div>
-            <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="2078:1256" data-name="Container">
-              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="2078:1257" data-name="Heading 3">
-                <div className="[word-break:break-word] flex flex-col font-sans font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#0f172a] text-[24px] tracking-[-0.6px] whitespace-nowrap" data-node-id="2078:1258">
-                  <p className="leading-[32px]">Take the First Step Towards Better Brain Health</p>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="2078:1259" data-name="Container">
-                <div className="[word-break:break-word] flex flex-col font-sans font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[14px] whitespace-nowrap" data-node-id="2078:1260">
-                  <p className="leading-[20px]">Book an appointment today for expert consultation and personalized neurological care.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section className="about-appointment" data-name="Section - CallToActionBanner" aria-labelledby="appointment-title">
+        <div className="about-appointment-content"><span className="about-appointment-icon"><img src={imgSvg9} alt="" /></span><div><h2 id="appointment-title">Take the First Step Towards Better Brain Health</h2><p>Book an appointment today for expert consultation and personalized neurological care.</p></div></div>
+        <a className="about-appointment-button" href="/book-appointment"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>Book Appointment</a>
+      </section>      <section className="about-gallery" data-name="GallerySection" id="gallery" aria-labelledby="about-gallery-title">
+        <header><p>OUR GALLERY</p><h2 id="about-gallery-title">A Glimpse Into Our Care</h2><span>Modern facilities, advanced technology, and a caring environment.</span></header>
+        <div className="about-gallery-rail" tabIndex={0} role="region" aria-label="Clinic gallery, scroll for more photos">
+          {[
+            ["/figma/about/imgStrokePatientCare.png", "Doctor consulting an elderly patient"],
+            ["/figma/about/imgEegTestInProgress.png", "Neurologist performing an EEG test"],
+            ["/figma/about/imgPhysiotherapySession.png", "Patient receiving physiotherapy"],
+            ["/figma/imgClinicReception.png", "Clinic reception"],
+            ["/figma/about/imgMriBrainScanEvaluation.png", "Brain MRI scan evaluation"],
+            ["/figma/about/imgDoctorConsultingAPatient.png", "Doctor discussing care with patients"],
+          ].map(([src, alt]) => <figure key={src}><img src={src} alt={alt} loading="lazy" /></figure>)}
         </div>
-        <div className="relative shrink-0" data-node-id="2078:1261" data-name="Button">
-          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
-            <div className="bg-[#0e2746] content-stretch flex gap-[8px] items-center px-[24px] py-[12px] relative rounded-[12px] shrink-0" data-node-id="2078:1262" data-name="Link">
-              <div className="absolute bg-[rgba(255,255,255,0)] inset-0 rounded-[12px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)]" data-node-id="2078:1263" data-name="Link:shadow" />
-              <div className="relative shrink-0 size-[16px]" data-node-id="2078:1264" data-name="SVG">
-                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSvg10} />
-              </div>
-              <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-white tracking-[0.35px] whitespace-nowrap" data-node-id="2078:1269">
-                <p className="leading-[20px]">Book Appointment</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="-translate-x-1/2 absolute bg-[rgba(250,77,43,0.3)] content-stretch flex flex-col items-center justify-center left-[calc(50%+0.5px)] py-[48px] top-[1784px] w-[1441px]" data-node-id="2094:559" data-name="GallerySection">
-        <div className="content-stretch flex flex-col gap-[32px] items-start max-w-[1280px] relative shrink-0 w-full" data-node-id="2094:560" data-name="Container">
-          <div className="content-stretch flex items-center justify-center pb-[12px] relative shrink-0 w-full" data-node-id="2094:561" data-name="Header">
-            <div className="relative shrink-0" data-node-id="2094:562" data-name="Container">
-              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[10px] items-center justify-center pt-[5px] relative size-full">
-                <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#fa4d2b] text-[24px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="2094:563">
-                  <p className="leading-[16px]">OUR GALLERY</p>
-                </div>
-                <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full" data-node-id="2094:564" data-name="Heading 2">
-                  <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#0a2540] text-[36px] whitespace-nowrap" data-node-id="2094:565">
-                    <p className="leading-[40px]">A Glimpse Into Our Care</p>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-col items-start pt-px relative shrink-0 w-full" data-node-id="2094:566" data-name="Container">
-                  <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[16px] whitespace-nowrap" data-node-id="2094:567">
-                    <p className="leading-[24px]">Modern facilities, advanced technology, and a caring environment.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="content-stretch flex gap-[16px] items-start justify-center relative shrink-0 w-full" data-node-id="2094:568" data-name="6-Card Image Grid">
-            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[0.01px] items-start min-w-px relative" data-node-id="2094:569" data-name="Image 1">
-              <div className="aspect-[188.5/141.97999572753906] bg-[#f1f5f9] border border-[#f1f5f9] border-solid content-stretch flex flex-col items-start justify-center overflow-clip p-px relative rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] shrink-0 w-full" data-node-id="2094:570" data-name="Background+Border+Shadow">
-                <div className="h-[139.98px] relative shrink-0 w-full" data-node-id="2094:571" data-name="Doctor consulting a patient">
-                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-full left-[-18.56%] max-w-none top-0 w-[137.13%]" src={imgDoctorConsultingAPatient} />
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[7px] relative shrink-0 w-full" data-node-id="2094:572" data-name="Margin">
-                <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="2094:573" data-name="Container">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] relative shrink-0 text-[#334155] text-[11px] text-center whitespace-nowrap" data-node-id="2094:574">
-                    <p className="leading-[16.5px]">Doctor consulting a patient</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[0.01px] items-start min-w-px relative" data-node-id="2094:575" data-name="Image 2">
-              <div className="aspect-[188.5/141.97999572753906] bg-[#f1f5f9] border border-[#f1f5f9] border-solid content-stretch flex flex-col items-start justify-center overflow-clip p-px relative rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] shrink-0 w-full" data-node-id="2094:576" data-name="Background+Border+Shadow">
-                <div className="h-[139.98px] relative shrink-0 w-full" data-node-id="2094:577" data-name="MRI Brain Scan Evaluation">
-                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-full left-[-18.56%] max-w-none top-0 w-[137.13%]" src={imgMriBrainScanEvaluation} />
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[7px] relative shrink-0 w-full" data-node-id="2094:578" data-name="Margin">
-                <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="2094:579" data-name="Container">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] relative shrink-0 text-[#334155] text-[11px] text-center whitespace-nowrap" data-node-id="2094:580">
-                    <p className="leading-[16.5px]">MRI Brain Scan Evaluation</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[0.01px] items-start min-w-px relative" data-node-id="2094:581" data-name="Image 3">
-              <div className="aspect-[188.5/141.97999572753906] bg-[#f1f5f9] border border-[#f1f5f9] border-solid content-stretch flex flex-col items-start justify-center overflow-clip p-px relative rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] shrink-0 w-full" data-node-id="2094:582" data-name="Background+Border+Shadow">
-                <div className="h-[139.98px] relative shrink-0 w-full" data-node-id="2094:583" data-name="Treatment for Migraine">
-                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-full left-[-18.56%] max-w-none top-0 w-[137.13%]" src={imgTreatmentForMigraine} />
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[7px] relative shrink-0 w-full" data-node-id="2094:584" data-name="Margin">
-                <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="2094:585" data-name="Container">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] relative shrink-0 text-[#334155] text-[11px] text-center whitespace-nowrap" data-node-id="2094:586">
-                    <p className="leading-[16.5px]">Treatment for Migraine</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-node-id="2094:587" data-name="Image 4">
-              <div className="aspect-[188.5/142] bg-[#f1f5f9] border border-[#f1f5f9] border-solid content-stretch flex flex-col items-start justify-center overflow-clip p-px relative rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] shrink-0 w-full" data-node-id="2094:588" data-name="Background+Border+Shadow">
-                <div className="h-[140px] relative shrink-0 w-full" data-node-id="2094:589" data-name="Stroke Patient Care">
-                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-full left-[-18.57%] max-w-none top-0 w-[137.14%]" src={imgStrokePatientCare} />
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[7px] relative shrink-0 w-full" data-node-id="2094:590" data-name="Margin">
-                <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="2094:591" data-name="Container">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] relative shrink-0 text-[#334155] text-[11px] text-center whitespace-nowrap" data-node-id="2094:592">
-                    <p className="leading-[16.5px]">Stroke Patient Care</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[0.01px] items-start min-w-px relative" data-node-id="2094:593" data-name="Image 5">
-              <div className="aspect-[188.5/141.97999572753906] bg-[#f1f5f9] border border-[#f1f5f9] border-solid content-stretch flex flex-col items-start justify-center overflow-clip p-px relative rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] shrink-0 w-full" data-node-id="2094:594" data-name="Background+Border+Shadow">
-                <div className="h-[139.98px] relative shrink-0 w-full" data-node-id="2094:595" data-name="EEG Test in Progress">
-                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-full left-[-18.56%] max-w-none top-0 w-[137.13%]" src={imgEegTestInProgress} />
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[7px] relative shrink-0 w-full" data-node-id="2094:596" data-name="Margin">
-                <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="2094:597" data-name="Container">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] relative shrink-0 text-[#334155] text-[11px] text-center whitespace-nowrap" data-node-id="2094:598">
-                    <p className="leading-[16.5px]">EEG Test in Progress</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[0.01px] items-start min-w-px relative" data-node-id="2094:599" data-name="Image 6">
-              <div className="aspect-[188.5/141.97999572753906] bg-[#f1f5f9] border border-[#f1f5f9] border-solid content-stretch flex flex-col items-start justify-center overflow-clip p-px relative rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] shrink-0 w-full" data-node-id="2094:600" data-name="Background+Border+Shadow">
-                <div className="h-[139.98px] relative shrink-0 w-full" data-node-id="2094:601" data-name="Physiotherapy Session">
-                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-full left-[-18.56%] max-w-none top-0 w-[137.13%]" src={imgPhysiotherapySession} />
-                  </div>
-                </div>
-              </div>
-              <div className="content-stretch flex flex-col items-start pt-[7px] relative shrink-0 w-full" data-node-id="2094:602" data-name="Margin">
-                <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="2094:603" data-name="Container">
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] relative shrink-0 text-[#334155] text-[11px] text-center whitespace-nowrap" data-node-id="2094:604">
-                    <p className="leading-[16.5px]">Physiotherapy Session</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bg-[rgba(250,77,43,0.3)] h-[331px] left-0 overflow-clip top-[975px] w-[1440px]" data-node-id="2097:674">
+      </section>      <div className="absolute bg-[rgba(250,77,43,0.3)] h-[331px] left-0 overflow-clip top-[975px] w-[1440px]" data-node-id="2097:674">
         <div className="-translate-x-1/2 absolute gap-x-[24px] gap-y-[24px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_248px] left-1/2 top-[41px] w-[1216px]" data-node-id="2094:606" data-name="Section - ExpertiseAndExperience">
           <div className="bg-white border border-[#e2e8f0] border-solid col-[1/span_7] content-stretch flex flex-col gap-[2px] items-start justify-self-stretch pb-[32px] pt-[29px] px-[29px] relative rounded-[16px] row-1 self-start shrink-0" data-node-id="2094:607" data-name="Areas of Expertise (Left Card)">
             <div className="absolute bg-[rgba(255,255,255,0)] inset-[-1px] rounded-[16px] shadow-[0px_4px_20px_-2px_rgba(9,30,66,0.05),0px_0px_1px_1px_rgba(9,30,66,0.05)]" data-node-id="2094:608" data-name="Areas of Expertise (Left Card):shadow" />
@@ -704,6 +562,8 @@ export default function Desktop2() {
     </div>
   );
 }
+
+
 
 
 
