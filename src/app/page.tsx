@@ -1,3 +1,4 @@
+import { ClinicGallery } from "@/components/clinic-gallery";
 import { ScrollControls } from "@/components/scroll-controls";
 import "@/components/gallery-scroll.css";
 import "./hero-fonts.css";
@@ -7,7 +8,7 @@ import "./testimonials.css";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 const imgDoctorExaminingBrainScan = "/figma/imgDoctorExaminingBrainScan.png";
 const imgNeuroCareClinicVaishaliNagar = "/figma/imgNeuroCareClinicVaishaliNagar.png";
-const imgNeuroCareClinicMansarovar = "/figma/imgNeuroCareClinicMansarovar.png";
+const imgNeuroCareClinicMansarovar = "/figma/NeuroCare.jpeg";
 const imgDrRakeshMehta = "/figma/shaitansingh.png";
 const imgDrNehaSharma = "/figma/imgDrNehaSharma.png";
 const imgDrAmitVerma = "/figma/imgDrAmitVerma.png";
@@ -17,7 +18,7 @@ const imgEegTestRoom = "/figma/imgEegTestRoom.png";
 const imgMriScanRoom = "/figma/imgMriScanRoom.png";
 const imgSpineTreatmentRoom = "/figma/imgSpineTreatmentRoom.png";
 const imgOurTeam = "/figma/imgOurTeam.png";
-const imgAmitS = "/figma/imgAmitS.png";
+const imgAmitS = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&h=160&q=85";
 const imgPriyaK = "/figma/imgPriyaK.png";
 const imgRohitV = "/figma/imgRohitV.png";
 const imgContainer = "/figma/imgContainer.svg";
@@ -248,97 +249,23 @@ export default function Desktop1() {
             </div>
           </div>
         </div>
-        <div className="content-stretch flex gap-[32px] items-start justify-center relative shrink-0 w-full" data-node-id="2042:2677" data-name="Location Cards Grid">
-          <div className="bg-white border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] isolate items-start min-w-px overflow-clip p-px relative rounded-[24px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2042:2678" data-name="Clinic 1: Vaishali Nagar">
-            <div className="flex-[1_0_0] min-h-[220px] min-w-px relative self-stretch z-[2]" data-node-id="2042:2679" data-name="Container">
-              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center min-h-[inherit] relative size-full">
-                <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2042:2680" data-name="NeuroCare Clinic Vaishali Nagar">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-full left-[-38.33%] max-w-none top-0 w-[176.67%]" src={imgNeuroCareClinicVaishaliNagar} />
-                  </div>
-                </div>
-                <div className="absolute bg-[#0a2540] content-stretch flex flex-col items-start left-[16px] px-[12px] py-[4px] rounded-[9999px] top-[16px]" data-node-id="2042:2681" data-name="Background">
-                  <div className="absolute bg-[rgba(255,255,255,0)] inset-[0_0_0.5px_0] rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" data-node-id="2042:2682" data-name="Overlay+Shadow" />
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[11px] text-white whitespace-nowrap" data-node-id="2042:2683">
-                    <p className="leading-[16.5px]">Main Clinic</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex-[1_0_0] min-w-px relative self-stretch z-[1]" data-node-id="2042:2684" data-name="Container">
-              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-between p-[24px] relative size-full">
-                <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="2042:2685" data-name="Container">
-                  <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="2042:2686" data-name="Heading 3">
-                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#0f172a] text-[18px] w-full" data-node-id="2042:2687">
-                      <p className="leading-[28px]">Vasudev ENT and NEURO centre</p>
-                    </div>
-                  </div>
-                  <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="2042:2688" data-name="Container">
-                    <div className="content-stretch flex gap-[10px] items-start relative shrink-0 w-full" data-node-id="2042:2689" data-name="Container">
-                      <div className="h-[17.973px] relative shrink-0 w-[10.5px]" data-node-id="2042:2690" data-name="Margin">
-                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMargin} />
-                      </div>
-                      <div className="content-stretch flex flex-col items-start pr-[1.84px] relative shrink-0" data-node-id="2042:2692" data-name="Container">
-                        <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[14px] w-[260px]" data-node-id="2042:2693">
-                          <p className="leading-[20px]">Radha Swami Bagh, sagar city road, Chomu, Rajasthan 303702</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-full" data-node-id="2042:2694" data-name="Container">
-                      <div className="relative shrink-0 size-[14px]" data-node-id="2042:2695" data-name="Container">
-                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer7} />
-                      </div>
-                      <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="2042:2697" data-name="Container">
-                        <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[14px] whitespace-nowrap" data-node-id="2042:2698">
-                          <p className="leading-[20px]">+91 9664360984</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-full" data-node-id="2042:2699" data-name="Container">
-                      <div className="relative shrink-0 size-[14px]" data-node-id="2042:2700" data-name="Container">
-                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer8} />
-                      </div>
-                      <div className="content-stretch flex flex-col items-start pb-[2px] relative shrink-0" data-node-id="2042:2702" data-name="Paragraph">
-                        <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[14px] whitespace-nowrap" data-node-id="2042:2703">
-                          <p className="leading-[20px]">Mon – Sun: 9:00 AM – 7:00 PM</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="content-stretch flex flex-col items-start pt-[16px] relative shrink-0 w-full" data-node-id="2042:2705" data-name="Link:margin">
-                  <a href="https://www.google.com/maps/dir/?api=1&destination=Vasudev%20ENT%20and%20Neuro%20Centre%2C%20Radha%20Swami%20Bagh%2C%20Sagar%20City%20Road%2C%20Chomu%2C%20Rajasthan%20303702&travelmode=driving&dir_action=navigate" target="_blank" rel="noopener noreferrer" className="bg-[#fa4d2b] content-stretch flex gap-[8px] items-center justify-center px-[16px] py-[10px] relative rounded-[12px] shrink-0 w-full" data-node-id="2042:2706" data-name="Link">
-                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-center text-white whitespace-nowrap" data-node-id="2042:2707">
-                      <p className="leading-[16px]">Get Directions</p>
-                    </div>
-                    <div className="h-[7.5px] relative shrink-0 w-[8.75px]" data-node-id="2042:2708" data-name="Container">
-                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer9} />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] h-[267px] isolate items-start min-w-px overflow-clip p-px relative rounded-[24px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2042:2710" data-name="Clinic 2: Mansarovar">
-            <div className="flex-[1_0_0] h-full min-h-[220px] min-w-px relative z-[2]" data-node-id="2042:2711" data-name="Container">
+        <div className="content-stretch flex gap-[32px] items-stretch justify-center relative shrink-0 w-full" data-node-id="2042:2677" data-name="Location Cards Grid">
+          <div className="bg-white border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] isolate items-start min-w-px overflow-clip p-px relative rounded-[24px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2042:2710" data-name="Clinic 2: Mansarovar">
+            <div className="flex-[1_0_0] min-h-[220px] min-w-px relative self-stretch z-[2]" data-node-id="2042:2711" data-name="Container">
               <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center min-h-[inherit] relative size-full">
                 <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2042:2712" data-name="NeuroCare Clinic Mansarovar">
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <img alt="" className="absolute h-full left-[-38.33%] max-w-none top-0 w-[176.67%]" src={imgNeuroCareClinicMansarovar} />
+                    <img alt="Neuro Clinic in Sikar" className="absolute inset-0 h-full w-full object-cover object-center" src={imgNeuroCareClinicMansarovar} />
                   </div>
                 </div>
-                <div className="absolute bg-[#0369a1] content-stretch flex flex-col items-start left-[16px] px-[12px] py-[4px] rounded-[9999px] top-[16px]" data-node-id="2042:2713" data-name="Background">
-                  <div className="absolute bg-[rgba(255,255,255,0)] inset-[0_0_0.5px_0] rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" data-node-id="2042:2714" data-name="Overlay+Shadow" />
-                  <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[11px] text-white whitespace-nowrap" data-node-id="2042:2715">
-                    <p className="leading-[16.5px]">Branch Clinic</p>
-                  </div>
-                </div>
+
               </div>
             </div>
-            <div className="flex-[1_0_0] h-full min-w-px relative z-[1]" data-node-id="2042:2716" data-name="Container">
+            <div className="flex-[1_0_0] min-w-px relative self-stretch z-[1]" data-node-id="2042:2716" data-name="Container">
               <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-between p-[24px] relative size-full">
                 <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="2042:2717" data-name="Container">
                   <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="2042:2718" data-name="Heading 3">
+                    <span className="mb-[4px] inline-flex rounded-full bg-[#0369a1] px-[12px] py-[4px] text-[11px] font-semibold leading-[16px] text-white">Branch Clinic</span>
                     <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#0f172a] text-[18px] w-full" data-node-id="2042:2719">
                       <p className="leading-[28px]">Neuro Clinic.</p>
                     </div>
@@ -382,6 +309,72 @@ export default function Desktop1() {
                       <p className="leading-[16px]">Get Directions</p>
                     </div>
                     <div className="h-[7.5px] relative shrink-0 w-[8.75px]" data-node-id="2042:2740" data-name="Container">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer9} />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white border border-[#e2e8f0] border-solid content-stretch flex flex-[1_0_0] isolate items-start min-w-px overflow-clip p-px relative rounded-[24px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="2042:2678" data-name="Clinic 1: Vaishali Nagar">
+            <div className="flex-[1_0_0] min-h-[220px] min-w-px relative self-stretch z-[2]" data-node-id="2042:2679" data-name="Container">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center min-h-[inherit] relative size-full">
+                <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="2042:2680" data-name="NeuroCare Clinic Vaishali Nagar">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="Exterior of the main clinic" className="absolute inset-0 h-full w-full object-cover object-center" src={imgNeuroCareClinicVaishaliNagar} />
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div className="flex-[1_0_0] min-w-px relative self-stretch z-[1]" data-node-id="2042:2684" data-name="Container">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-between p-[24px] relative size-full">
+                <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="2042:2685" data-name="Container">
+                  <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="2042:2686" data-name="Heading 3">
+                    <span className="mb-[4px] inline-flex rounded-full bg-[#0a2540] px-[12px] py-[4px] text-[11px] font-semibold leading-[16px] text-white">Main Clinic</span>
+                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#0f172a] text-[18px] w-full" data-node-id="2042:2687">
+                      <p className="leading-[28px]">Vasudev ENT and NEURO centre</p>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="2042:2688" data-name="Container">
+                    <div className="content-stretch flex gap-[10px] items-start relative shrink-0 w-full" data-node-id="2042:2689" data-name="Container">
+                      <div className="h-[17.973px] relative shrink-0 w-[10.5px]" data-node-id="2042:2690" data-name="Margin">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMargin} />
+                      </div>
+                      <div className="content-stretch flex flex-col items-start pr-[1.84px] relative shrink-0" data-node-id="2042:2692" data-name="Container">
+                        <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[14px] w-[260px]" data-node-id="2042:2693">
+                          <p className="leading-[20px]">Radha Swami Bagh, sagar city road, Chomu, Rajasthan 303702</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-full" data-node-id="2042:2694" data-name="Container">
+                      <div className="relative shrink-0 size-[14px]" data-node-id="2042:2695" data-name="Container">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer7} />
+                      </div>
+                      <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="2042:2697" data-name="Container">
+                        <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[14px] whitespace-nowrap" data-node-id="2042:2698">
+                          <p className="leading-[20px]">+91 9664360984</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-full" data-node-id="2042:2699" data-name="Container">
+                      <div className="relative shrink-0 size-[14px]" data-node-id="2042:2700" data-name="Container">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer8} />
+                      </div>
+                      <div className="content-stretch flex flex-col items-start pb-[2px] relative shrink-0" data-node-id="2042:2702" data-name="Paragraph">
+                        <div className="[word-break:break-word] flex flex-col font-sans justify-center leading-[0] not-italic relative shrink-0 text-[#475569] text-[14px] whitespace-nowrap" data-node-id="2042:2703">
+                          <p className="leading-[20px]">Mon – Sun: 9:00 AM – 7:00 PM</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start pt-[16px] relative shrink-0 w-full" data-node-id="2042:2705" data-name="Link:margin">
+                  <a href="https://www.google.com/maps/dir/?api=1&destination=Vasudev%20ENT%20and%20Neuro%20Centre%2C%20Radha%20Swami%20Bagh%2C%20Sagar%20City%20Road%2C%20Chomu%2C%20Rajasthan%20303702&travelmode=driving&dir_action=navigate" target="_blank" rel="noopener noreferrer" className="bg-[#fa4d2b] content-stretch flex gap-[8px] items-center justify-center px-[16px] py-[10px] relative rounded-[12px] shrink-0 w-full" data-node-id="2042:2706" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-sans font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-center text-white whitespace-nowrap" data-node-id="2042:2707">
+                      <p className="leading-[16px]">Get Directions</p>
+                    </div>
+                    <div className="h-[7.5px] relative shrink-0 w-[8.75px]" data-node-id="2042:2708" data-name="Container">
                       <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer9} />
                     </div>
                   </a>
@@ -587,19 +580,7 @@ export default function Desktop1() {
           ].map(service => <article className="neurology-service-card" key={service.title}><div className="service-icon"><img src={service.icon} alt="" /></div><h3>{service.title}</h3><p>{service.description}</p><ul className="service-tags" aria-label="Treatments">{service.tags.map(tag => <li key={tag}>{tag}</li>)}</ul></article>)}
         </div>
       </section>
-      <section id="gallery" className="home-gallery" aria-labelledby="gallery-heading">
-        <header className="home-gallery-heading"><p>OUR GALLERY</p><h2 id="gallery-heading">A Glimpse Into Our Care</h2><span>Modern facilities, advanced technology, and a caring environment.</span></header>
-        <div className="home-gallery-rail" tabIndex={0} role="region" aria-label="Clinic photo gallery, scroll to see more photos">
-          {[
-            ["/figma/about/imgStrokePatientCare.png", "Doctor consulting an elderly patient"],
-            ["/figma/about/imgEegTestInProgress.png", "Neurologist performing an EEG test"],
-            ["/figma/about/imgPhysiotherapySession.png", "Patient receiving physiotherapy care"],
-            [imgClinicReception, "Patients at the clinic reception"],
-            ["/figma/about/imgMriBrainScanEvaluation.png", "Brain MRI scan evaluation"],
-            [imgOurTeam, "Our clinic team"],
-          ].map(([src, alt]) => <figure key={src}><img src={src} alt={alt} loading="lazy" /></figure>)}
-        </div><ScrollControls />
-      </section>      <div className="bg-[rgba(248,250,252,0.7)] border-[#f1f5f9] border-solid border-t content-stretch flex flex-col items-start pb-[30px] pt-[31px] " data-node-id="2047:2955" data-name="TestimonialsSection">
+      <ClinicGallery />      <div className="bg-[rgba(248,250,252,0.7)] border-[#f1f5f9] border-solid border-t content-stretch flex flex-col items-start pb-[30px] pt-[31px] " data-node-id="2047:2955" data-name="TestimonialsSection">
         <div className="max-w-[1280px] relative shrink-0 w-full" data-node-id="2047:2956" data-name="Container">
           <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[48px] items-start max-w-[inherit] relative size-full">
             <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="2047:2957" data-name="Container">
@@ -623,7 +604,7 @@ export default function Desktop1() {
               <div className="bg-white border border-[#e2e8f0] border-solid content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-[1_0_0] gap-[16px] items-start min-w-px p-[25px] relative rounded-[24px]" data-node-id="2047:2969" data-name="Testimonial 1">
                 <div className="border-2 border-[#0284c7] border-solid max-w-[389.3299865722656px] relative rounded-[9999px] shrink-0 size-[56px]" data-node-id="2047:2970" data-name="Amit S.">
                   <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none rounded-[9999px]">
-                    <img alt="" className="absolute h-full left-[-41.76%] max-w-none top-0 w-[183.51%]" src={imgAmitS} />
+                    <img alt="Representative stock portrait" title="Representative stock photo" className="absolute inset-0 h-full w-full object-cover object-center" src={imgAmitS} />
                   </div>
                 </div>
                 <div className="relative shrink-0" data-node-id="2047:2971" data-name="Container">

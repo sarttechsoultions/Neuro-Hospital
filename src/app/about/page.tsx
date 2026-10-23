@@ -1,17 +1,10 @@
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
-import { ScrollControls } from "@/components/scroll-controls";
+import { ClinicGallery } from "@/components/clinic-gallery";
 import "./responsive.css";
 const base = "/figma/about/";
 const expertise = ["Stroke & Brain Clot Treatment", "Migraine Management", "Chronic Headache Treatment", "Alzheimer’s Illness & Memory Loss", "Brain Hemorrhage Treatment", "Neurological Disorders Diagnosis", "Neck-related Disease Management", "Preventive Neurology Care"];
 const reasons = ["Experienced DM Neurologist", "Assistant Professor at SMS Hospital", "Patient-Centered Treatment Approach", "Advanced Neurological Care", "Affordable Consultation Fees", "Trusted by Patients Across Jaipur & Chomu"];
-const galleryImages = [
-  { src: base + "imgDoctorConsultingAPatient.png", alt: "Doctor consulting a patient" },
-  { src: base + "imgTreatmentForMigraine.png", alt: "Treatment for migraine and chronic headaches" },
-  { src: base + "imgStrokePatientCare.png", alt: "Stroke patient care" },
-  { src: base + "imgEegTestInProgress.png", alt: "EEG diagnostic test in progress" },
-  { src: base + "imgPhysiotherapySession.png", alt: "Physiotherapy and rehabilitation session" },
-  { src: base + "imgMriBrainScanEvaluation.png", alt: "Neurologist reviewing brain MRI scan" },
-];
+
 export default function AboutPage() { return <div className="figma-about"><SiteHeader />
 <main>
 <section className="fa-hero"><div className="fa-wrap fa-hero-inner"><div><p className="fa-eyebrow">ABOUT US</p><h1><span>Expert Neurological Care</span><br/>With Compassion</h1><p>We are committed to providing the best neurological care with advanced<br className="fa-desktop"/> treatment, modern technology and personalized attention for every patient.</p></div><img src={base+"imgPngtreeAnatomicalHumanHeadWithLabeled207057361.png"} alt="Brain and nervous system"/></div></section>
@@ -19,7 +12,7 @@ export default function AboutPage() { return <div className="figma-about"><SiteH
 <section className="fa-peach fa-mission"><div className="fa-wrap fa-mission-card"><span className="fa-mission-icon">◎</span><div><h2>Our Mission</h2><p>Our mission is to provide affordable, ethical, and advanced neurological treatment to patients<br/> suffering from brain, spine, and nerve disorders. We focus on accurate diagnosis, personalized<br/> treatment, and compassionate patient care to improve quality of life.</p></div><img src={base+"imgMriBrainScanEvaluation.png"} alt="Advanced neurological care"/></div></section>
 <section className="fa-wrap fa-details"><article className="fa-panel"><h2>Areas of Expertise</h2><ul>{expertise.map(x=><li key={x}><span>✧</span>{x}</li>)}</ul></article><article className="fa-panel"><h2>Why Choose Dr. Shaitan Singh Choudhary?</h2><div className="fa-reasons"><ul>{reasons.map(x=><li key={x}><b>✓</b>{x}</li>)}</ul><img src={base+"imgNeurologistReviewingBrainMriScanWithPatient.png"} alt="Neurologist reviewing a brain scan"/></div></article></section>
 <section className="fa-peach fa-care"><div className="fa-wrap fa-care-card"><img src={base+"imgDoctorConsultingAPatient.png"} alt="Doctor consulting a patient"/><div><h2>Why Choose Dr. Shaitan Singh Choudhary?</h2><h3>Your Brain, Our Priority</h3><div className="fa-features">{[["Experienced & Skilled","Years of expertise in neurological care"],["Advanced Diagnostics","Modern technology for accurate diagnosis"],["Patient-Centric Approach","Every patient gets personalized care"],["Trusted by Patients","Compassionate and transparent treatment"]].map(([title,copy])=><div key={title}><span>♧</span><div><strong>{title}</strong><p>{copy}</p></div></div>)}</div></div></div></section>
-<section className="fa-gallery fa-wrap" aria-labelledby="gallery-title"><header><p>OUR GALLERY</p><h2 id="gallery-title">A Glimpse Into Our Care</h2><span>Modern facilities, advanced technology, and a caring environment.</span></header><div className="fa-gallery-rail" tabIndex={0} role="region" aria-label="Clinic photo gallery, scroll horizontally to see more photos">{galleryImages.map((img)=><figure className="fa-gallery-item" key={img.src}><img src={img.src} alt={img.alt} loading="lazy"/></figure>)}</div><ScrollControls /></section>
+<ClinicGallery />
 <section className="fa-wrap fa-cta"><span><img src="/figma/SVG.png" alt="" width="32" height="32" /></span><div><h2>Take the First Step Towards Better Brain Health</h2><p>Book an appointment today for expert consultation and personalized neurological care.</p></div><a href="/book-appointment">▣ Book Appointment</a></section>
 </main><SiteFooter/></div>; }
 
