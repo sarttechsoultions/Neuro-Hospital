@@ -6,9 +6,9 @@ export function SiteFooter() {
   return <div className="neuro-footer" data-name="MainFooter" id="contact">
     <footer className="neuro-footer-inner">
       <div className="footer-intro">
-        <Link href="/" className="footer-brand"><span className="footer-brand-icon"><img src="/figma/nav.png" width="48" height="48" alt="" /></span><span><strong>NeuroCare Clinic</strong><small>Expert Neurology Care</small></span></Link>
+        <Link href="/" className="footer-brand"><span className="footer-brand-icon"><img src="/figma/nav.png" width="48" height="48" alt="" /></span><span><strong>Dr. Shaitan Singh Choudhary</strong><small>Expert Neurology Care</small></span></Link>
         <p>Better brain. Better life.<br />Compassionate care, every step of the way.</p>
-        <Link className="footer-appointment" href="/book-appointment">Book an appointment <span aria-hidden="true">↗</span></Link>
+        {/* <Link className="footer-appointment" href="/book-appointment">Book an appointment <span aria-hidden="true">↗</span></Link> */}
       </div>
       <div className="footer-main">
         <div className="footer-links"><h2>Explore</h2><nav aria-label="Footer navigation">{[["Home", "/"], ["About us", "/about"], ["Our doctors", "/#doctors"], ["Services", "/#services"], ["Gallery", "/#gallery"], ["Contact", "/#contact"]].map(([label, href]) => <Link key={label} href={href}>{label}</Link>)}</nav></div>

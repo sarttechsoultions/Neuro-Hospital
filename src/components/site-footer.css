@@ -1,4 +1,4 @@
-.homepage > .neuro-footer { background:#0a2540; color:#a9bdce; padding:48px 24px 24px; width:100%; order:6; margin-top:auto; }
+.homepage > .neuro-footer, .figma-about > .neuro-footer { background:#0a2540; color:#a9bdce; padding:48px 24px 24px; width:100%; order:6; margin-top:auto; }
 .neuro-footer > .neuro-footer-inner { max-width:1216px; margin:0 auto; width:100%; }
 .footer-intro { display:flex; align-items:center; justify-content:space-between; gap:28px; padding-bottom:32px; border-bottom:1px solid #ffffff16; }
 .footer-brand { display:flex; align-items:center; gap:12px; color:white; flex-shrink:0; }
@@ -25,7 +25,7 @@
 .footer-bottom { border-top:1px solid #ffffff16; padding-top:22px; display:flex; justify-content:space-between; gap:12px; color:#819bb0; font-size:11px; line-height:1.8; }
 @media(max-width:900px) { .footer-intro { flex-wrap:wrap; }.footer-main { grid-template-columns:.65fr 1.35fr; gap:32px; }.footer-clinic-list { grid-template-columns:1fr; gap:22px; }.footer-contact { grid-column:1/-1; border-top:1px solid #ffffff16; padding-top:24px; } }
 @media(max-width:600px) {
- .homepage > .neuro-footer { padding:32px 20px 22px; }
+ .homepage > .neuro-footer, .figma-about > .neuro-footer { padding:32px 20px 22px; }
  .footer-intro { display:grid; gap:18px; padding-bottom:28px; }
  .footer-brand strong { font-size:19px; }
  .footer-intro p { font-size:12px; }
@@ -39,3 +39,4 @@
 }
 .footer-brand-icon { width:48px; height:48px; background:transparent; border-radius:50%; flex-shrink:0; }
 .footer-brand-icon img { display:block; width:48px; height:48px; object-fit:contain; }
+

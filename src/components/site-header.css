@@ -1,5 +1,6 @@
 /* Shared responsive navigation */
-.homepage > .site-header { position:sticky; top:0 !important; z-index:100; order:-1; width:100%; padding:0; background:#fffffff5; backdrop-filter:blur(12px); border-bottom:1px solid #f1f5f9; box-shadow:0 2px 10px #0a25400a; }
+.site-header { position:sticky; top:0 !important; z-index:100; width:100%; padding:0; background:#fffffff5; backdrop-filter:blur(12px); border-bottom:1px solid #f1f5f9; box-shadow:0 2px 10px #0a25400a; }
+.homepage > .site-header { order:-1; }
 .site-header > .site-header-inner { width:100%; max-width:1280px; min-height:80px; height:auto; margin:auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; gap:32px; }
 .site-logo { display:flex; align-items:center; gap:12px; flex-shrink:0; }
 .site-logo-icon { display:grid; place-items:center; width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg,#0369a1,#06b6d4); box-shadow:0 3px 6px #0284c733; }

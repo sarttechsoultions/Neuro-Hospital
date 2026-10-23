@@ -29,7 +29,7 @@ export default function AppointmentForm() {
       </div>
       <label className="booking-details">Additional details <small>(optional)</small><textarea name="details" maxLength={1000} rows={3} placeholder="Tell us anything that would help us prepare for your visit" /></label>
       <p className="booking-form-help">Continue to prepare your request, then send it using your email app. Your appointment is confirmed only after the clinic contacts you.</p>
-      <button className="booking-button booking-submit" type="submit">Prepare appointment request <span aria-hidden="true">→</span></button>
+      <button className="booking-button booking-submit" type="submit">Prepare appointment request <span aria-hidden="true"></span></button>
     </form>
     {request && <div className="booking-review" role="status"><h3>Your request is ready, {request.name}.</h3><p>It has not been sent yet. Open your email app to review and send it to the clinic.</p><a className="booking-button" href={"mailto:info@neurocareclinic.com?subject=" + encodeURIComponent("NeuroCare appointment request") + "&body=" + encodeURIComponent(request.body)}>Continue by email</a><a href="tel:+919664360984">Or call +91 96643 60984</a></div>}
   </div>;
